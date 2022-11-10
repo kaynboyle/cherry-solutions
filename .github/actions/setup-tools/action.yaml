@@ -22,8 +22,8 @@ runs:
       with:
         path: ${{ env.ASDF_DATA_DIR }}
         key: >
-          asdf|${{ env.cache-version }}|${{ runner.os }}|${{ steps.cache-key.outputs.key
-          }}
+          asdf|${{ env.cache-version }}|${{ runner.os }}|${{
+          steps.cache-key.outputs.key }}
 
     - if: steps.cache.outputs.cache-hit != 'true'
       name: Install Node
