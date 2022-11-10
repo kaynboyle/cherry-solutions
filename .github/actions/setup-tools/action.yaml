@@ -1,0 +1,34 @@
+name: setup-tools
+description: Install tools using asdf
+
+runs:
+  using: composite
+
+  steps:
+    - name: Install asdf ${{ env.asdf-version }}
+      uses: asdf-vm/actions/setup@v1.1.0
+      with:
+        asdf_branch: ${{ env.asdf-version }}
+
+    - id: cache-key
+      shell: bash
+      run: >
+        echo "key=$(asdf --version):${{ hashFiles('.tool-versions') }}" >>
+        $GITHUB_OUTPUT
+
+    - name: Restore asdf cache
+      id: cache
+      uses: actions/cache@v3.0.11
+      with:
+        path: ${{ env.ASDF_DATA_DIR }}
+        key: >
+          asdf|${{ env.cache-version }}|${{ runner.os }}|${{ steps.cache-key.outputs.key
+          }}
+
+    - if: steps.cache.outputs.cache-hit != 'true'
+      name: Install Node
+      id: install
+      shell: bash
+      run: |
+        awk <.tool-versions '{print $1}' | xargs -I _ asdf plugin add _
+        asdf install
