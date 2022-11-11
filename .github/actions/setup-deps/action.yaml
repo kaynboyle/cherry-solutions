@@ -1,0 +1,25 @@
+name: setup-deps
+description: Setup NPM dependencies
+
+runs:
+  using: composite
+
+  steps:
+    - id: cache-folder
+      shell: bash
+      run: echo "dir=$(npm c get cache)" >> $GITHUB_OUTPUT
+
+    - name: Restore NPM cache
+      id: cache
+      uses: actions/cache@v3.0.11
+      with:
+        path: ${{ steps.cache-folder.outputs.dir }}
+        key: >
+          node|${{ env.cache-version }}|${{ runner.os }}|${{
+          hashFiles('package-lock.json') }}
+        restore-keys: |
+          node|${{ env.cache-version }}|${{ runner.os }}|
+
+    - name: Install the project dependencies
+      shell: bash
+      run: npm i --no-audit --no-fund
