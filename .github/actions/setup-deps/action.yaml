@@ -22,4 +22,4 @@ runs:
 
     - name: Install the project dependencies
       shell: bash
-      run: npm i --no-audit --no-fund
+      run: npm run ins

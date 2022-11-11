@@ -73,7 +73,7 @@ jobs:
         uses: ./.github/actions/setup-deps
 
       - name: Run typecheck
-        run: npm r tsc
+        run: npm run typecheck
 
   run-lint:
     name: 🛠 Run lint
@@ -92,4 +92,4 @@ jobs:
         uses: ./.github/actions/setup-deps
 
       - name: Format code
-        run: npm r format:check
+        run: npm run format:check
