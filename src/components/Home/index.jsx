@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
+import Button from 'react-bootstrap/Button';
+
 
 const Home = () => {
   return(
@@ -11,7 +13,7 @@ const Home = () => {
               <p>Optimizing Container Terminal  Performace, 
                 Tredictability & Transparancy.
               </p>
-              <button id="home-header-button" className="button is-info">Learn More</button>
+              <Button className="learn-more-button" variant="secondary">Learn More</Button>
               <p> </p>
               <p>Integrating People, Process & Technology 
                 by applying professional and solution serivices
