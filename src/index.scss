@@ -44,7 +44,6 @@ code {
       width: 100%;
       height: 100%;
 
-
       &.front {
         transform: rotateY(0);
         background-color: #2d2d2d;
@@ -76,7 +75,7 @@ code {
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 20px;
-  filter: drop-shadow(8px 8px 4px #86869f3d);
+
 }
 
 .card-text {
