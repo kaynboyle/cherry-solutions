@@ -1,49 +1,49 @@
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 
-    .hero-image {
-        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-       
-        background-image: 
-        linear-gradient(to bottom, rgba(54, 55, 61, 0.36), rgba(37, 41, 47, 0.305)),
-        url("../../assets/images/home-header.jpeg" ) ;
-       
-        opacity: 0.9;
-        /* Set a specific height */
-        height: 600%;
-      
-        /* Position and center the image to scale nicely on all screens */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: 20px;
-        filter: drop-shadow(30px 10px 4px #86869f);
-        /* margin-left: -100px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(54, 55, 61, 0.36),
+      rgba(37, 41, 47, 0.305)
+    ),
+    url("../../assets/images/home-header.jpeg");
+
+  opacity: 0.9;
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  filter: drop-shadow(30px 10px 4px #86869f);
+  /* margin-left: -100px;
         margin-right: -100px; */
-      }
+}
 
-      #hero-text {
-        
-        text-align: center;
-      
-        padding-top: 10%;
-        padding-bottom: 15%;
-        padding-left: 15%;
-        padding-right: 15%;
-        /* top: 80%;
+#hero-text {
+  text-align: center;
+
+  padding-top: 10%;
+  padding-bottom: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+  /* top: 80%;
         left: 80%;
         transform: translate(-50%, -50%); */
-        color: rgb(252, 252, 252);
-      }
+  color: rgb(252, 252, 252);
+}
 
-      .background{
-        background-color: rgba(86, 86, 132, 0.689);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        
-      }
+.background {
+  background-color: rgba(86, 86, 132, 0.689);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-      .learn-more-button{
-        background-color: rgb(73, 133, 201);
-      }
+.learn-more-button {
+  background-color: rgb(73, 133, 201);
+}
