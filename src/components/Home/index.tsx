@@ -64,11 +64,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <h2>DEVELOP AND MAINTAIN A CULTURE OF OPERATIONAL EXCELLENCE WITH A
-STRATEGIC PROGRAM AND TOOLSET
-Supports increasing and evolving customer and shareholder requirements.</h2>
-      <h2>Solutions</h2>
+      <div className="textLine">
+        <h2>Develop an maintain a culture of operational excellence with a strategic program an toolset
+        </h2>
+        <h2>
+        Supports increasing and evolving customer and shareholder requirements.
+        
+        </h2>
+      </div>
+      <div className="Solutions">
+        <h2>Solutions</h2>
+      </div>
       <div className='card-container'>
         <div className="flip-cards">
           {cards.map((card) => {
@@ -93,6 +99,11 @@ Supports increasing and evolving customer and shareholder requirements.</h2>
             );
           })}
         </div>
+        </div>
+        <div className="photo3">
+          <div className="three">
+
+          </div>
         </div>
     </main>
   );

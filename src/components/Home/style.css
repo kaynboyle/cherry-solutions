@@ -17,7 +17,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   filter: drop-shadow(30px 10px 4px #86869f);
   /* margin-left: -100px;
         margin-right: -100px; */
@@ -67,3 +67,42 @@
   filter: drop-shadow(30px 10px 4px #86869f);
 }
 
+.textLine{
+
+  text-align: end;
+  margin-bottom: 80px;
+  margin-right: 40px;
+}
+
+.Solutions{
+  text-align: center;
+  border: 1px solid red;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.card-container{
+  margin-bottom: 60px;
+  filter: drop-shadow(20px 10px 4px #86869f84);
+}
+
+
+.photo3{
+  background-image: 
+    url("../../assets/images/home3.jpeg");
+
+  opacity: 0.9;
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+  filter: drop-shadow(30px 10px 4px #86869f);
+}
+
+.three{
+  height: 300px;
+}
