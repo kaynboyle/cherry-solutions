@@ -94,29 +94,6 @@ Supports increasing and evolving customer and shareholder requirements.</h2>
           })}
         </div>
         </div>
-      <div className="flip-cards">
-        {cards.map((card) => {
-          return (
-            <div className="flip-card-outer">
-              <div className={cn("flip-card-inner", "hover-trigger")}>
-                <div className="card front">
-                  <div className="card-body d-flex justify-content-center align-items-center">
-                    <p className="card-text ">{card.front}</p>
-                  </div>
-                </div>
-                <div className="card back">
-                  <div className="card-body d-flex justify-content-center align-items-center">
-                    <p className="card-text">{card.back}</p>
-                    <Button className="learn-more-button" variant="secondary">
-                      Learn More
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
     </main>
   );
 };
