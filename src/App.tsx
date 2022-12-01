@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Home from "./components/Home";
 import Header from "./components/Header";
+import Footer from './components/Footer';
 
 const App: FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

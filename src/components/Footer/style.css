@@ -1,0 +1,21 @@
+#get-footer{
+    background-color: rgba(190, 213, 253, 0.466) !important;
+    text-align: center;
+  }
+
+#target-bottom{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 40%;
+   
+}
+
+.react-icons{
+    color: red;
+    size:70px;
+}
+
+.react-icons:hover{
+    color: rgba(185, 15, 15, 0.723);
+}
