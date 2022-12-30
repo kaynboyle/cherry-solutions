@@ -86,7 +86,7 @@
 
 .card-container{
   margin-bottom: 60px;
-  filter: drop-shadow(20px 10px 4px #86869f84);
+  filter: drop-shadow(20px 10px 4px #8f47473a);
   padding-bottom: 20px;
 }
 
@@ -104,7 +104,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
-  filter: drop-shadow(30px 10px 4px #86869f);
+  filter: drop-shadow(30px 10px 4px #56292979);
 }
 
 .three{
@@ -131,9 +131,9 @@
 .result-item{
   padding: 30px 10px;
   margin: 5px;
-  width: 250px;
-  margin-right: 100px;
-  margin-left: 100px;
+  width: 300px;
+  margin-right: 50px;
+  margin-left: 50px;
 
   
 
@@ -155,4 +155,41 @@
   margin-top: -40px;
   padding-top: 30px;
   background-color: #5a70a646;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+#box1{
+  border-radius: 25px;
+  background-color: #5a70a6;
+  color: white;
+}
+
+#box2{
+  border-radius: 25px;
+  border: 2px solid #5a70a6;
+}
+.bottomHome {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(54, 55, 61, 0.36),
+      rgba(37, 41, 47, 0.305)
+    ),
+    url("../../assets/images/bottomHome.jpeg");
+
+  opacity: 0.9;
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+  filter: drop-shadow(30px 10px 4px #86869f);
+  /* margin-left: -100px;
+        margin-right: -100px; */
 }

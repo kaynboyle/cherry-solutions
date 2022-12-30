@@ -1,0 +1,99 @@
+.Consulting1img{
+    background-image: linear-gradient(
+      to bottom,
+      rgba(54, 55, 61, 0.36),
+      rgba(37, 41, 47, 0.305)
+    ),
+    url("../../assets/images/Consulting1.jpeg");
+
+    opacity: 0.9;
+    /* Set a specific height */
+    height: 60%;
+
+    /* Position and center the image to scale nicely on all screens */
+
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-bottom: 70px;
+        filter: drop-shadow(30px 10px 4px #86869f);
+            
+        ;
+        margin-right: 20px;
+        margin-left: 50px;
+        opacity: .6;
+        filter: drop-shadow(15px 10px 3px #86869f);
+        margin-bottom: 5px;
+        border-radius: 25px
+    
+}
+
+.consultingCol1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center !important;
+
+  
+   
+  }
+  
+  .result-item{
+    padding: 30px 10px;
+    margin: 5px;
+    width: 300px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 7px;
+    
+  
+    
+  
+  }
+  
+  .proven-results{
+    font-weight: bold;
+    background-color:#5a70a6f6;
+    text-align: end;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    color: white;
+    
+  }
+  
+  .consulting1-flex{
+    display:flex;
+    padding-top: 100px;
+    background-color: #5a70a646;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+ 
+  
+  .box1{
+    border-radius: 25px;
+    background-color: #5a70a6;
+    color: white;
+    padding: 30px 10px;
+    max-width: 400px;
+    margin: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .imageOverlay{
+    background-color: rgba(90, 104, 149, 0.722);
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+  }
+
+  .imageOverLay{}

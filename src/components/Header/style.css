@@ -5,3 +5,6 @@
   z-index: 9999;
 }
 
+.link-color:hover{
+  color:red;
+}
