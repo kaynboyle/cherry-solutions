@@ -64,47 +64,80 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="textLine">
-        <h2>Develop an maintain a culture of operational excellence with a strategic program an toolset
-        </h2>
-        <h2>
-        Supports increasing and evolving customer and shareholder requirements.
-        
-        </h2>
-      </div>
-      <div className="Solutions">
-        <h2>Solutions</h2>
-      </div>
-      <div className='card-container'>
-        <div className="flip-cards">
-          {cards.map((card) => {
-            return (
-              <div className="flip-card-outer">
-                <div className={cn("flip-card-inner", "hover-trigger")}>
-                  <div className="card front">
-                    <div className="card-body d-flex justify-content-center align-items-center">
-                      <p className="card-text ">{card.front}</p>
+     <div className="results-box">
+        <div className="proven-results">
+          <p className="middle-p">Develop an maintain a culture of operational excellence with a strategic program an toolset
+          </p>
+          <p className="middle-p">
+          Supports increasing and evolving customer and shareholder requirements.
+          
+          </p>
+        </div>
+        <div className="Solutions">
+          <h2></h2>
+        </div>
+        <div className='card-container'>
+          <div className="flip-cards">
+            {cards.map((card) => {
+              return (
+                <div className="flip-card-outer">
+                  <div className={cn("flip-card-inner", "hover-trigger")}>
+                    <div className="card front">
+                      <div className="card-body d-flex justify-content-center align-items-center">
+                        <p className="card-text ">{card.front}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="card back">
-                    <div className="card-body">
-                      <p className="card-text">{card.back}</p>
-                      <Button className="learn-more-button" variant="secondary">
-                        Learn More
-                      </Button>
+                    <div className="card back">
+                      <div className="card-body">
+                        <p className="card-text">{card.back}</p>
+                        <Button className="learn-more-button" variant="secondary">
+                          Learn More
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+          <div></div>
+          </div>
         </div>
         <div className="photo3">
           <div className="three">
 
           </div>
         </div>
+        <div className='results-box'>
+          <div className="proven-results">
+            <h2>  Proven Results </h2>
+          </div>
+          <div className="results-flex">
+          <div className="result-item">
+            <ul>
+              <li>
+              Reduction of up to 15% of man-hour & Equipment hour per lift costs
+              </li>
+              <li>
+              Ongoing protection from entropy, preventing 1-3% of annual erosion
+              </li>
+              <li>
+              Startup ROI as measured in months and ongoing support cost fractional to savings
+
+              </li>
+            </ul>
+          </div>
+        
+          <div className="result-item">
+            <p className="bold-text">Notable Cherry America technology</p>
+            <p>implementations include
+              1st to implement longshore time tracking solution on US West Coast
+              1st to implement OCR, EPS technology on US West Coast
+              2+ decades of enhancing MTOs Business Intelligence Environments
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
