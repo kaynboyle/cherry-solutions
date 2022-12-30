@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
+import Consulting from "./components/Consulting";
 
 const App: FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/consulting" element={<Consulting />} />
         </Routes>
         <Footer />
       </Router>

@@ -113,7 +113,7 @@ const Home = () => {
             <h2>  Proven Results </h2>
           </div>
           <div className="results-flex">
-          <div className="result-item">
+          <div className="result-item" id="box1">
             <ul>
               <li>
               Reduction of up to 15% of man-hour & Equipment hour per lift costs
@@ -128,7 +128,7 @@ const Home = () => {
             </ul>
           </div>
         
-          <div className="result-item">
+          <div className="result-item" id="box2">
             <p className="bold-text">Notable Cherry America technology</p>
             <p>implementations include
               1st to implement longshore time tracking solution on US West Coast
@@ -137,6 +137,8 @@ const Home = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className='bottomHome'>
       </div>
     </main>
   );
