@@ -1,30 +1,71 @@
-.Consulting1img{
-    background-image: linear-gradient(
-      to bottom,
-      rgba(54, 55, 61, 0.36),
-      rgba(37, 41, 47, 0.305)
-    ),
-    url("../../assets/images/Consulting1.jpeg");
+.header-wrap{
+  background:linear-gradient( #252d76e4,#252d76) ;
+  color:white;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
 
-    opacity: 0.9;
-    /* Set a specific height */
-    height: 60%;
+}
+h1{
+  font-weight: 900;
+}
 
-    /* Position and center the image to scale nicely on all screens */
+.consultingHeader{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px ;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
 
-        background-repeat: no-repeat;
-        background-size: 100%;
-        margin-bottom: 70px;
-        filter: drop-shadow(30px 10px 4px #86869f);
-            
-        ;
-        margin-right: 20px;
-        margin-left: 50px;
-        opacity: .6;
-        filter: drop-shadow(15px 10px 3px #86869f);
-        margin-bottom: 5px;
-        border-radius: 25px
-    
+}
+.consultingHeader{
+  text-decoration: underline overline red;
+}
+.consultingimg1 {
+  height: 30%;
+  width:60%;
+  opacity: .9;
+  filter: drop-shadow(10px 10px 5px#252d767a);
+  margin-top: -10px;
+
+
+}
+
+.imageOverlay{
+  position: relative;
+  z-index: 100;
+  margin-left: 50%;
+  background-color: #252d76;
+  color: white;
+  font-size: xx-large;
+  font-weight: 900;
+  margin-top: -25%;
+  padding-left: 10px;
+  padding-right: 30%;
+  
+ 
+  
+}
+
+
+.box1row{
+  background-color: #252d76;
+  color: white;
+  font-size: xx-large;
+  padding: 30px 10px;
+  margin-top: .5%;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 8%;
+}
+
+.strongANDred{
+  color: red;
 }
 
 .consultingCol1{
@@ -32,68 +73,86 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center !important;
+    align-items: center;
 
   
    
   }
   
-  .result-item{
-    padding: 30px 10px;
-    margin: 5px;
-    width: 300px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 7px;
-    
-  
-    
-  
+  .arrow-flex img{
+    height: 200px;
+    width: 150px
   }
-  
-  .proven-results{
-    font-weight: bold;
-    background-color:#5a70a6f6;
-    text-align: end;
-    padding-right: 100px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-bottom: 50px;
-    color: white;
+  .arrowIMGdiv{
+    margin-top: -50px;
+    margin-left: 80px;
+  }
+
+  .box1row.two{
+    margin-top: -20px;
     
   }
-  
   .consulting1-flex{
     display:flex;
-    padding-top: 100px;
-    background-color: #5a70a646;
+    padding-top: 20px;
+    background-color: #ffffff60;
     margin-top: 30px;
     flex-wrap: wrap;
-    justify-content: center;
+    padding-bottom: 200px;
+    justify-content: center!important;
+
 
   }
   
  
   
   .box1{
-    border-radius: 25px;
-    background-color: #5a70a6;
+    background-color: #252d76;
     color: white;
+    
     padding: 30px 10px;
     max-width: 400px;
     margin: 5px;
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 20px;
-  }
-
-  .imageOverlay{
-    background-color: rgba(90, 104, 149, 0.722);
     text-align: center;
-    color: white;
-    font-size: x-large;
-    margin-left: 10%;
-    margin-right: 10%;
-   
   }
 
-  .imageOverLay{}
+
+  .shadow-text{
+    font-weight: 800;
+  }
+  .shadow-text2{
+    filter: drop-shadow(5px 5px 2px #05052fec);
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+.Consulting2img img{
+    opacity: .7;
+    filter: drop-shadow(5px 10px 4px #86869f65);  
+    max-width: 400px;
+    z-index: 1;
+}
+.Consulting2img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* @media (min-width: 500px) { ANYTHING ABOVE 500PX
+	
+} */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

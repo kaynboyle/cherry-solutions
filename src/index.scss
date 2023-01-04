@@ -10,14 +10,14 @@ code {
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; */
 }
 .flip-card-outer {
-  width: 200px;
+  width: 250px;
   height: 200px;
   margin-top: 25px;
   margin-left: 50px;
   margin-right: 50px;
 
   &.focus-trigger:focus {
-    outline: 5px solid greenyellow;
+    outline: 10px solid rgb(255, 47, 47);
     outline-offset: 5px;
   }
 
@@ -46,14 +46,14 @@ code {
 
       &.front {
         transform: rotateY(0);
-        background-color: #5a70a6f6;
+        background-color: #252d76;
         color: #fff;
       }
 
       &.back {
         transform: rotateY(180deg);
         background-color: #fff;
-        color: #2d2d2d;
+        color: #252d76;
         font-size: x-small;
       }
     }

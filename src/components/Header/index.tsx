@@ -34,7 +34,7 @@ const Header = () => {
               <Nav.Link className="link-color" href="#deets">
                 More deets
               </Nav.Link>
-              <Nav.Link className="link-color" eventKey={2} href="./contact-us">
+              <Nav.Link className="link-color contact" eventKey={2} href="./contact-us">
                 Contact Us
               </Nav.Link>
             </Nav>
