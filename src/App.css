@@ -40,3 +40,24 @@
 .App{
   font-family: Poppins,Helvetica,Arial,Lucida,sans-serif;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right top, #f20000 50%, #ddd 50%);
+  background-size: 100% calc(100% - 100vh + 129px);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: white;
+}

@@ -43,6 +43,23 @@ const cards: cardInterface[] = [
 ];
 
 const Home = () => {
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
   return (
     <main>
       <div className="shadow-2xl">
@@ -64,9 +81,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-     <div className="results-box">
-        <div className="proven-results">
-          <p className="middle-p">Develop an maintain a culture of operational excellence with a strategic program an toolset
+     <div className="results-box ">
+        <div className="proven-results reveal">
+          <p className="middle-p">Develop an maintain a culture of operational excellence with a strategic program and toolset
           </p>
           <p className="middle-p">
           Supports increasing and evolving customer and shareholder requirements.
@@ -108,11 +125,11 @@ const Home = () => {
 
           </div>
         </div>
-        <div className='results-box'>
-          <div className="proven-results">
+        <div className='cherry'>
+          <div className="proven-results reveal">
             <h2>  Proven Results </h2>
           </div>
-          <div className="results-flex">
+          <div className="results-flex reveal">
           <div className="result-item" id="box1">
             <ul>
               <li>
