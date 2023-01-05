@@ -1,41 +1,35 @@
-.header-wrap{
-  background:linear-gradient( #252d76e4,#252d76) ;
-  color:white;
-  font-size: xx-large;
+.header-wrap {
+  background: linear-gradient(#252d76e4, #252d76);
+  color: white;
   font-weight: bolder;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 50px;
-
 }
-h1{
-  font-weight: 900;
+.header-wrap h1 {
+  font-size: xx-large;
+  letter-spacing: 3px;
+  font-weight: 700;
 }
 
-.consultingHeader{
+.consultingHeader {
   display: flex;
   flex-direction: row;
-  padding-top: 20px ;
+  padding-top: 20px;
   align-items: center;
   text-align: center;
   justify-content: center;
-  justify-content: space-around;
+}
 
-}
-.consultingHeader{
-  text-decoration: underline overline red;
-}
 .consultingimg1 {
-  height: 30%;
-  width:60%;
-  opacity: .9;
+  height: 20%;
+  width: 50%;
+  opacity: 0.9;
   filter: drop-shadow(10px 10px 5px#252d767a);
   margin-top: -10px;
-
-
 }
 
-.imageOverlay{
+.imageOverlay {
   position: relative;
   z-index: 100;
   margin-left: 50%;
@@ -43,116 +37,181 @@ h1{
   color: white;
   font-size: xx-large;
   font-weight: 900;
-  margin-top: -25%;
+  margin-top: -17%;
   padding-left: 10px;
   padding-right: 30%;
-  
- 
-  
 }
 
-
-.box1row{
+.box1row {
   background-color: #252d76;
   color: white;
-  font-size: xx-large;
+  font-size: x-large;
   padding: 30px 10px;
-  margin-top: .5%;
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 80px;
-  margin-top: 8%;
+  padding-bottom: 150px;
+  margin-top: .5%;
+}
+.box2row {
+  background-color: #252d76;
+  color: white;
+  font-size: x-large;
+  padding: 30px 10px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 150px;
+  margin-top: 15vh;
 }
 
-.strongANDred{
+.strongANDred {
   color: red;
 }
 
-.consultingCol1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center;
+.box1row2 {
+  background-color: whitesmoke;
+  color: #252d76;
+  font-size: large;
+  margin-top: -8%;
+  /* margin-top: -18%; */
+  filter: drop-shadow(10px 10px 5px#252d767a);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.upper-filter{
+  filter: drop-shadow(-5px -10px 13px#252d764c);
+}
 
-  
-   
-  }
-  
-  .arrow-flex img{
-    height: 200px;
-    width: 150px
-  }
-  .arrowIMGdiv{
-    margin-top: -50px;
-    margin-left: 80px;
-  }
+.left-text{
+  text-align: center;
+}
+.consultingCol1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+}
 
-  .box1row.two{
-    margin-top: -20px;
-    
-  }
-  .consulting1-flex{
-    display:flex;
-    padding-top: 20px;
-    background-color: #ffffff60;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    padding-bottom: 200px;
-    justify-content: center!important;
+.consulting1-flex {
+  display: flex;
+  padding-top: 20px;
+  background-color: #ffffff60;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 200px;
+  justify-content: flex-end;
+  margin-right: 10px
+}
 
+.box1 {
+  background-color: #252d76;
+  color: white;
+  padding: 2vh 10vw 2vh 10vw;
+  margin: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 50vw;
+}
 
-  }
-  
+.imageFlexcol img {
+  padding-top: 20px;
+  background-color: #ffffff60;
+  margin-top: 30px;
+  opacity: 0.9;
+  filter: drop-shadow(5px 10px 4px #86869f65);
+  max-width: 45vw;
+}
+.imageFlexcol{
+  display: flex;
+}
+
+.consulting-logo {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
+  background-image: url("../../assets/images/large-cherry-logo.jpg");
+
+  opacity: 0.4;
+  /* Set a specific height */
+  height: 80%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
  
+  margin-bottom: 70px;
   
-  .box1{
-    background-color: #252d76;
-    color: white;
-    
-    padding: 30px 10px;
-    max-width: 400px;
-    margin: 5px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 20px;
-    text-align: center;
-  }
+  /* margin-left: -100px;
+        margin-right: -100px; */
+        background-color: rgb(233, 227, 227);
+      }
+      /* @media (min-width: 500px) { ANYTHING ABOVE 500PX
+        
+      } */
+      .logo-content-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: .5vw;
+        margin-left: 2vw;
+      }
+      .logo-content-wrapper div{
+        max-width: 20vw;
+        margin-right: 10px;
+      }
+      .logo-content-wrapper ul{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        max-width: 60vw;
+        list-style: none; 
+      }
+      .logo-content-wrapper ul li::before {
+        content: "☑"; /* Insert content that looks like bullets */
+        padding-right: 10px;
+        color: #c02210; /* Or a color you prefer */
+      }
 
+      .header-wrap2 {
+        background: linear-gradient(#252d76e4, #252d76);
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 150px;
+        margin-top: -25vh;
+      }
 
-  .shadow-text{
-    font-weight: 800;
-  }
-  .shadow-text2{
-    filter: drop-shadow(5px 5px 2px #05052fec);
-    margin-right: 150px;
-    margin-left: 150px;
-  }
-
-.Consulting2img img{
-    opacity: .7;
-    filter: drop-shadow(5px 10px 4px #86869f65);  
-    max-width: 400px;
-    z-index: 1;
-}
-.Consulting2img {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-/* @media (min-width: 500px) { ANYTHING ABOVE 500PX
-	
-} */
-
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.slide-right:hover{
+  box-shadow: inset 500px 0 0 0 #ffffff;
+  color: #c02210;
+}
+
+.button-slide {
+  color: #FFF;
+  line-height: 10vh;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #c02210;
+  box-shadow: inset 0 0 0 0 #c02210;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
