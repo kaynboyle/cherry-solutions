@@ -19,7 +19,7 @@ const Consulting = () => {
         },
         {
             id:"3",
-            content:"Automate redundant actions."
+            content:"Automate redundant actions"
         }
         
     ];
@@ -58,7 +58,7 @@ const Consulting = () => {
             </div>
             <div className="Consulting1img">
                 <div>
-                    <img className='consultingimg1' src={require("../../assets/images/Consulting1.jpeg")} alt="consulting"/>
+                    <img className='consultingimg1 mobile-friend' src={require("../../assets/images/Consulting1.jpeg")} alt="consulting"/>
                     <div className="imageOverlay">
                         <p >What can Performance Intelligence do for You?</p> 
                     </div> 
@@ -92,7 +92,7 @@ const Consulting = () => {
                      </div>
                 </div>
                 <div className="imageFlexcol">
-                        <img src={require("../../assets/images/Consulting2.jpeg")} alt="consulting"/>
+                        <img className="mobile-friend" src={require("../../assets/images/Consulting2.jpeg")} alt="consulting"/>
                 </div>
                 
             </div>
@@ -114,24 +114,18 @@ const Consulting = () => {
                         
                     </div>
             </div>
-            <div className='header-wrap2'>
 
+            <div className="ai-title">
+                <div className="title-p reveal">
+                    <p >Applied Intelligence</p>
+                </div>
+                <div className="box3row">
+                    <img className='consultingimg2 mobile-friend' src={require("../../assets/images/aiIMG2.jpg")} alt="consulting"/>
+                    <p className="right-text">Applied Intelligence combines artificial intelligence (AI) and machine learning technologies with data analytics, automation and human ingenuity that solve complex business problems.</p>
+                    
+                </div>
             </div>
-            <div className="Consulting1img">
-                <div>
-                    <img className='consultingimg2' src={require("../../assets/images/aiIMG2.jpg")} alt="consulting"/>
-                    <div className="imageOverlay2">
-                        <p >Applied Intelligence</p> 
-                    </div> 
-                </div>    
-            </div>
-            <div className="box2row">
-                <p className="title-p">Applied Intelligence</p>
-                <p className="left-text">Applied Intelligence combines artificial intelligence (AI) and machine learning technologies with data analytics, automation and human ingenuity that solve complex business problems.
-                <strong className="strongANDred reveal"> engineer smarter</strong>,<strong className="strongANDred reveal"> <br></br>operate better</strong>, and <strong className="strongANDred reveal">drive sustainable efficiency</strong>.</p>
-                
-            </div>
-            <p>  It is a smarter, faster and more effective approach to collect, process, and analyze data to create insights to act on, while automating those actions where possible to unlock business value.</p>
+            <p className="thirdBlock">  It is a smarter, faster and more effective approach to collect, process, and analyze data to create insights to act on, while automating those actions where possible to unlock business value.</p>
             <div className='stickies'>
                 {stickys.map((sticky) => {
                 return (

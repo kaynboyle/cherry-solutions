@@ -49,6 +49,7 @@
   background-color: rgb(208, 21, 21);
   border-color: rgba(211, 217, 221, 0.177);
   font-weight: 700;
+  border-radius: 25px !important;
 }
 
 .learn-more-button:hover{
@@ -69,7 +70,7 @@
 
 
 .class-container{
-  filter: drop-shadow(30px 10px 4px #86869f);
+    filter: drop-shadow(10px 10px 5px#252d767a);
 }
 
 .textLine{
@@ -88,7 +89,7 @@
 
 .card-container{
   margin-bottom: 60px;
-  filter: drop-shadow(20px 10px 4px #8f47473a);
+  filter: drop-shadow(10px 10px 5px#252d767a);
   padding-bottom: 20px;
 }
 
@@ -107,16 +108,17 @@
   background-size: cover;
   margin-bottom: 70px;
   filter: drop-shadow(30px 10px 4px #56292979);
+  margin-top: -50px;
 }
 
 .three{
-  height: 300px;
+  height: 200px;
 }
 
 .middle-p{
-  font-size: 25px;
+  font-size: large;
   font-weight: 700;
-  line-height: 6rem;
+  /* line-height: 6rem; */
 }
 
 .bold-text{
@@ -127,6 +129,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center !important;
+  margin-top: -10px;
 
  
 }
@@ -143,14 +146,18 @@
 }
 
 .proven-results{
-  background-color:rgba(255, 255, 255, 0.844);
+  background-color:rgb(255, 255, 255);
   text-align: end;
   padding-right: 100px;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
   margin-bottom: 50px;
   color: #252d76;
-  font-weight: bolder;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: x-large;
+  margin-top: -50px;
+  
   
 }
 
@@ -163,7 +170,7 @@
   
 }
 .cherry{
-  margin-top: -40px;
+  margin-top: -70px;
   padding-top: 30px;
   background-color: #252d7628;
   padding-bottom: 20px;
@@ -176,12 +183,14 @@
   border-radius: 25px;
   background-color: #252d76;
   color: white;
+  font-size: medium;
 }
 
 #box2{
   background-color: white;
   border-radius: 25px;
   border: 2px solid #252d76;
+  font-size: medium;
 }
 .bottomHome {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
