@@ -151,6 +151,14 @@ const Consulting = () => {
                     </div>
                 </div>
             </div>
+            <div className="flex-graph">
+                <div className="size-contain">
+                    <div className="graph-div">
+                            <div className="mos-height"></div>
+                    </div>
+                </div>
+            </div>
+            
 
             {/* <div className="consulting-logo">
                 <div className="logo-content-wrapper">
