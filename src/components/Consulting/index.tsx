@@ -137,6 +137,17 @@ const Consulting = () => {
                 };
 
             </div>
+            <div className="consultingIMG3">
+                <div className="mos-title">
+                    <div><p>Management Operating System</p></div>
+                    <div className="threeheight">
+                        <div><p>A Management Operating System is the set of tools, meetings, and behaviors used to manage people and processes.</p>
+                        </div>
+                        <div><p>This system follows a strict process of Plan. Do. Check. Act.  This improvement cycle enables control and with steady process performance improvement.  The MOS incorporates and employs a variety of subsystems inclusive of ‘any’ TOS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             {/* <div className="consulting-logo">
                 <div className="logo-content-wrapper">
