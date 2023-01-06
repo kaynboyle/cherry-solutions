@@ -31,8 +31,8 @@ const Header = () => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="link-color" href="#deets">
-                More deets
+              <Nav.Link className="link-color" href="./about-us">
+                About Us
               </Nav.Link>
               <Nav.Link className="link-color contact" eventKey={2} href="./contact-us">
                 Contact Us

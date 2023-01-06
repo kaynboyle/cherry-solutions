@@ -51,6 +51,7 @@ body {
   background-size: 100% calc(100% - 100vh + 129px);
   background-repeat: no-repeat;
   margin: 0;
+  
 }
 body::before {
   content: "";

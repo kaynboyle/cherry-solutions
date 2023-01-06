@@ -127,9 +127,9 @@ const Home = () => {
         </div>
         <div className='cherry'>
           <div className="proven-results reveal">
-            <h2>  Proven Results </h2>
+            <p>  Proven Results </p>
           </div>
-          <div className="results-flex reveal">
+          <div className="results-flex">
           <div className="result-item" id="box1">
             <ul>
               <li>
