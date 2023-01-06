@@ -48,10 +48,13 @@ const Consulting = () => {
                 <h1>Consulting</h1>
                 <div className="consultingHeader">
                     <div>
-                        <p className="button-slide slide-right">Performance Intelligence</p>
+                        <a className="button-slide slide-right" href="#performance-intelligence">Performance Intelligence</a>
                     </div>
                     <div>
-                        <p className="button-slide slide-right">Applied Intelligence</p>
+                        <a className="button-slide slide-right" href="#applied-intelligence">Applied Intelligence</a>
+                    </div>
+                    <div>
+                        <a className="button-slide slide-right" href="#mos">MOS</a>
                     </div>
                     
                 </div>
@@ -65,7 +68,7 @@ const Consulting = () => {
                 </div>    
             </div>
             <div className="box1row">
-                <p className="left-text">Unlock profitable, sustainable growth based on a data-driven approach to optimizing operations.
+                <p id="performance-intelligence" className="left-text">Unlock profitable, sustainable growth based on a data-driven approach to optimizing operations.
                 To succeed today, you need to <strong className="strongANDred reveal"> engineer smarter</strong>,<strong className="strongANDred reveal"> <br></br>operate better</strong>, and <strong className="strongANDred reveal">drive sustainable efficiency</strong>.</p>
             </div>
                 <div>
@@ -116,12 +119,12 @@ const Consulting = () => {
             </div>
 
             <div className="ai-title">
-                <div className="title-p reveal">
+                <div className="title-p">
                     <p >Applied Intelligence</p>
                 </div>
                 <div className="box3row">
-                    <img className='consultingimg2 mobile-friend' src={require("../../assets/images/aiIMG2.jpg")} alt="consulting"/>
-                    <p className="right-text">Applied Intelligence combines artificial intelligence (AI) and machine learning technologies with data analytics, automation and human ingenuity that solve complex business problems.</p>
+                    <img className='consultingimg2 mobile-friend reveal' src={require("../../assets/images/aiIMG2.jpg")} alt="consulting"/>
+                    <p id="applied-intelligence" className="right-text">Applied Intelligence combines artificial intelligence (AI) and machine learning technologies with data analytics, automation and human ingenuity that solve complex business problems.</p>
                     
                 </div>
             </div>
@@ -138,12 +141,12 @@ const Consulting = () => {
 
             </div>
             <div className="consultingIMG3">
-                <div className="mos-title">
-                    <div><p>Management Operating System</p></div>
+                <div className="mos-title reveal">
+                    <div className="mos-name"><p>Management Operating System<br></br>(MOS)</p></div>
                     <div className="threeheight">
-                        <div><p>A Management Operating System is the set of tools, meetings, and behaviors used to manage people and processes.</p>
+                        <div id="mos"><p>A Management Operating System is the set of tools, meetings, and behaviors used to manage people and processes.</p>
                         </div>
-                        <div><p>This system follows a strict process of Plan. Do. Check. Act.  This improvement cycle enables control and with steady process performance improvement.  The MOS incorporates and employs a variety of subsystems inclusive of ‘any’ TOS.</p>
+                        <div><p>This system follows a strict process of<br></br> <strong className="strongANDred">Plan. Do. Check. Act.</strong><br></br>  This improvement cycle enables control and with steady process performance improvement.  The MOS incorporates and employs a variety of subsystems inclusive of ‘any’ TOS.</p>
                         </div>
                     </div>
                 </div>
