@@ -238,7 +238,7 @@ const Consulting = () => {
             <div>
             <div className='consulting1-flex consulting1-addendum'>
                 <div className="imageFlexcol reveal">
-                    <img className="mobile-friend" src={require("../../assets/images/capa-img1.jpg")} alt="consulting"/>
+                    <img className="mobile-friend" src={require("../../assets/images/capa-img1.jpg")} alt="capa"/>
 
                 </div>
                 <div className="box1 box1-addendum">

@@ -7,38 +7,60 @@ import cn from "classnames";
 interface cardInterface {
   id: string;
   front: string;
-  back: string;
+  back1: string;
+  back2: string;
+  back3: string;
+  href: string;
 }
 const cards: cardInterface[] = [
   {
     id: "1",
     front: "Performance Intelligence",
-    back: "Marine Terminal Operational Excellence// DAaaS Install (Data Analytics as a Service)// Tactical Sustainment & Governance",
+    back1: "Marine Terminal Operational Excellence",
+    back2:"DAaaS Install (Data Analytics as a Service)",
+    back3:"Tactical Sustainment & Governance",
+    href:"/consulting#performance-intelligence"
   },
   {
     id: "2",
     front: "Applied Intelligence",
-    back: "Collect, Process & Analyze Data// Create Insights Identify Opportunities for Improvment// Automate Actions",
+    back1: "Collect, Process & Analyze Data",
+    back2:"Create Insights Identify Opportunities for Improvment",
+    back3:"Automate Actions",
+    href:"/consulting#applied-intelligence"
   },
   {
     id: "3",
     front: "Management Operating Systems (MOS)",
-    back: "Tools,meetings, behaviors managing people and processes that deliver results// Plan, Do, Check, Act Improvement Cycle",
+    back1: "Tools,meetings, behaviors managing people and processes that",
+    back2:" deliver results",
+    back3:"Plan, Do, Check, Act Improvement Cycle",
+    href:"/consulting#mos"
   },
   {
     id: "4",
     front: "CAPA Process Intelligence",
-    back: "Corrective Action Preventative Action",
+    back1: "Corrective Action",
+    back2:"Preventative Action",
+    back3:" ",
+    href:"/consulting#capa"
+    
   },
   {
     id: "5",
     front: "Empowering Effective Management & Decision Making",
-    back: "Observe, Orient, Decide, Act",
+    back1: "Observe, Orient, Decide,",
+    back2:"Act",
+    back3:" ",
+    href:" "
   },
   {
     id: "6",
     front: "Data Management Tools",
-    back: "Collective Data Assistant/ Cherry Cola/ Cherry Pie",
+    back1: "Collective Data Assistant",
+    back2:"Cherry Cola",
+    back3:"Cherry Pie",
+    href:" "
   },
 ];
 
@@ -69,9 +91,9 @@ const Home = () => {
               <p>
                 Optimizing Container Terminal Performace, Tredictability & Transparancy.
               </p>
-              <Button className="learn-more-button" variant="secondary">
+              <a href="#learn-more" className="learn-more-button" >
                 Learn More
-              </Button>
+              </a>
               <p> </p>
               <p>
                 Integrating People, Process & Technology by applying professional and
@@ -90,10 +112,8 @@ const Home = () => {
           
           </p>
         </div>
-        <div className="Solutions">
-          <h2></h2>
-        </div>
-        <div className='card-container'>
+        
+        <div id="learn-more" className='card-container'>
           <div className="flip-cards">
             {cards.map((card) => {
               return (
@@ -106,10 +126,10 @@ const Home = () => {
                     </div>
                     <div className="card back">
                       <div className="card-body">
-                        <p className="card-text">{card.back}</p>
-                        <Button className="learn-more-button" variant="secondary">
+                        <p className="card-text">{card.back1}<br></br>{card.back2}<br></br>{card.back3}</p>
+                        <a href={card.href}className="learn-more-button">
                           Learn More
-                        </Button>
+                        </a>
                       </div>
                     </div>
                   </div>
