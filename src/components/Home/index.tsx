@@ -113,7 +113,7 @@ const Home = () => {
           </p>
         </div>
         
-        <div id="learn-more" className='card-container'>
+        <div id="learn-more" className='card-container mobile-friend'>
           <div className="flip-cards">
             {cards.map((card) => {
               return (

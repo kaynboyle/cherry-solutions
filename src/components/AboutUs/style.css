@@ -1,47 +1,174 @@
+.div1About {
+  text-align: center;
+  background-color: #7aa6d1e4;
+  letter-spacing: 2px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #414355;
+}
+.div1About p {
+  background-color: white;
+  padding: 8px;
+}
+
 .ribbon {
-    font-size: 16px !important;
-    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-   
-    width: 50%;
-       
-    position: relative;
-    background: #c02210;
-    color: #fff;
-    text-align: center;
-    padding: 1em 2em; /* Adjust to suit */
-    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-   }
-   .ribbon:before, .ribbon:after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -1em;
-    border: 1.5em solid #986767;
-    z-index: -1;
-   }
-   .ribbon:before {
-    left: -2em;
-    border-right-width: 1.5em;
-    border-left-color: transparent;
-   }
-   .ribbon:after {
-    right: -2em;
-    border-left-width: 1.5em;
-    border-right-color: transparent;
-   }
-   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-style: solid;
-    border-color: rgb(128, 48, 48) transparent transparent transparent;
-    bottom: -1em;
-   }
-   .ribbon .ribbon-content:before {
-    left: 0;
-    border-width: 1em 0 0 1em;
-   }
-   .ribbon .ribbon-content:after {
-    right: 0;
-    border-width: 1em 1em 0 0;
-   }
+  font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+  width: 50%;
+
+  position: relative;
+  background: #c02210;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em; /* Adjust to suit */
+  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986767;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: rgb(128, 48, 48) transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.flex-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-about div {
+  max-width: 450px;
+  margin: 10px;
+}
+
+.acomplishments-ul {
+  background-color: white;
+  padding: 5px;
+  text-align: start;
+  list-style: none;
+}
+.acomplishments-ul li {
+  margin-left: 20px;
+}
+.acomplishments-ul li::before {
+  content: "\2022";
+  color: red; /* Change the color */
+  font-weight: 900;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em;
+  margin-left: -1em;
+}
+.headshots {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -180px;
+  margin-bottom: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.headshot-container-divs {
+  max-width: 200px;
+  max-height: 50px;
+  min-width: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+}
+.brian {
+  border: 5px solid #c02210;
+  background-image: url("../../assets/images/BBPic.PNG");
+
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(15px 10px 4px #292a5654);
+}
+.damon {
+  border: 5px solid #c02210;
+  background-image: url("../../assets/images/Damon.PNG");
+
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(15px 10px 4px #292a5654);
+}
+
+.norm {
+  border: 5px solid #c02210;
+  background-image: url("../../assets/images/norm.JPG");
+
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(15px 10px 4px #292a5654);
+}
+.jim {
+  border: 5px solid #c02210;
+  background-image: url("../../assets/images/temp.png");
+
+  /* Set a specific height */
+  height: 600%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(15px 10px 4px #292a5654);
+}
+
+.about-text{
+    background-color: #252d76;
+    color:#fff;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
