@@ -167,15 +167,19 @@ const Home = () => {
         
           <div className="result-item" id="box2">
             <p className="bold-text">Notable Cherry America technology</p>
-            <p>implementations include
-              1st to implement longshore time tracking solution on US West Coast
-              1st to implement OCR, EPS technology on US West Coast
-              2+ decades of enhancing MTOs Business Intelligence Environments
-            </p>
+            <p>implementations include...</p>
+              <li>1st to implement longshore time tracking solution on US West Coast</li>
+              <li>1st to implement OCR, EPS technology on US West Coast</li>
+              <li>2+ decades of enhancing MTOs Business Intelligence Environments</li>
+            
           </div>
         </div>
       </div>
       <div className='bottomHome'>
+        <div className="partner-size">
+          <div className="partners1"></div>
+        </div>
+        
       </div>
     </main>
   );

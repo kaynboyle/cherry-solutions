@@ -210,31 +210,25 @@
   border: 2px solid #252d76;
   font-size: medium;
 }
-.bottomHome {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+/* .bottomHome {
+  display:flex;
+} */
+.partners1{
+  background-image: url("../../assets/images/partners1.jpg");
 
-  background-image: linear-gradient(
-      to bottom,
-      rgba(54, 55, 61, 0.36),
-      rgba(37, 41, 47, 0.305)
-    ),
-    url("../../assets/images/bottomHome.jpeg");
-
-  opacity: 0.9;
   /* Set a specific height */
-  height: 600%;
+  height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  margin-bottom: 70px;
-  filter: drop-shadow(30px 10px 4px #86869f);
-  /* margin-left: -100px;
-        margin-right: -100px; */
+  
 }
-
+.partner-size{
+  max-width: 500px;
+  height: 250px;
+}
 .marquee {
   flex: 0 0 auto;
   min-width: 100%;
