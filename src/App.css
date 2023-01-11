@@ -63,7 +63,31 @@ body::before {
   background: white;
 }
 
-a:link{text-decoration: none!important;}
-a:active{
-  text-decoration: none!important;
+
+.reveal {
+  position: relative;
+  transform: translateY(85px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .mobile-friend {
+    display: none;
+  }
+  .imageOverlay {
+    margin-top: 20px;
+  }
+  .thirdBlock {
+    max-width: 300px;
+  }
+  .right-text {
+    max-width: 600px;
+    margin-left: 0px;
+  }
 }
