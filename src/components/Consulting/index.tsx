@@ -68,12 +68,12 @@ const Consulting = () => {
                     
                 </div>
             </div>
-            <div className="Consulting1img">
+            <div className="hero-software">
                 <div>
                     <img id="performance-intelligence"className='consultingimg1 mobile-friend' src={require("../../assets/images/Consulting1.jpeg")} alt="consulting"/>
-                    <div className="imageOverlay">
+                </div> 
+                <div className="imageOverlay">
                         <p >What can Performance Intelligence do for You?</p> 
-                    </div> 
                 </div>    
             </div>
             <div className="box1row">
