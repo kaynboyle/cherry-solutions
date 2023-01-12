@@ -46,16 +46,17 @@ code {
 
       &.front {
         transform: rotateY(0);
-        background-color: #7aa6d1e4;
-        color: #252d76;
+        background-color: #252d76;
+        color: white;
         font-weight: 600;
+        font-size: medium !important;
       }
 
       &.back {
         transform: rotateY(180deg);
         background-color: #fff;
         color: #252d76;
-        font-size: 10px;
+        font-size: 13px;
       }
     }
   }
@@ -81,5 +82,5 @@ code {
 
 .card-text {
   text-align: center;
-  font-size:small;
+  // font-size:small;
 }
