@@ -76,6 +76,10 @@ body::before {
   opacity: 1;
 }
 
+a:link{
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .mobile-friend {
     display: none;

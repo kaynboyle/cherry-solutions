@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import Consulting from "./components/Consulting";
+import Software from "./components/Software"
 import AboutUs from "./components/AboutUs";
 
 const App: FC = () => {
@@ -23,6 +24,7 @@ const App: FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/consulting" element={<Consulting />} />
+          <Route path="/software" element={<Software/>} />
           <Route path="/about-us" element={<AboutUs/>} />
         </Routes>
         <Footer />
