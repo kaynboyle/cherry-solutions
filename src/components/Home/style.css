@@ -69,46 +69,37 @@
   border: 2px solid rgb(208, 21, 21);
 }
 
-.learn-more-button:hover{
-  background-color:  rgb(255, 255, 255);
-  border:2px solid rgb(208, 21, 21);
+.learn-more-button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(208, 21, 21);
   color: rgb(208, 21, 21);
-  
-  
 }
-.card-body{
+.card-body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
 
-
-
-.class-container{
-    filter: drop-shadow(10px 10px 5px#252d767a);
+.class-container {
+  filter: drop-shadow(10px 10px 5px#252d767a);
 }
 
-.textLine{
-
+.textLine {
   text-align: end;
   margin-bottom: 80px;
   margin-right: 40px;
 }
 
-
-.card-container{
+.card-container {
   margin-bottom: 60px;
   filter: drop-shadow(10px 10px 5px#252d7647);
   padding-bottom: 20px;
 }
 
-
-.photo3{
-  background-image: 
-    url("../../assets/images/home3.jpeg");
+.photo3 {
+  background-image: url("../../assets/images/home3.jpeg");
 
   opacity: 0.9;
   /* Set a specific height */
@@ -123,42 +114,38 @@
   margin-top: -50px;
 }
 
-.three{
+.three {
   height: 200px;
 }
 
-.middle-p{
+.middle-p {
   font-size: large;
   font-weight: 500;
   /* line-height: 6rem; */
 }
 
-.bold-text{
+.bold-text {
   font-weight: bold;
 }
 
-.results-flex{
+.results-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center !important;
   margin-top: -10px;
-
- 
 }
 
-.result-item{
+.result-item {
   padding: 30px 10px;
   margin: 5px;
-  width: 300px;
+  max-width: 450px;
   margin-right: 50px;
   margin-left: 50px;
-
-  
-
+  min-width: 200px;
 }
 
-.proven-results{
-  background-color:rgb(255, 255, 255);
+.proven-results {
+  background-color: rgb(255, 255, 255);
   text-align: end;
   padding-right: 100px;
   padding-bottom: 10px;
@@ -169,63 +156,60 @@
   letter-spacing: 3px;
   font-size: x-large;
   margin-top: -50px;
-  
-  
 }
 
-.results-box{
+.results-box {
   margin-top: -40px;
   padding-top: 30px;
   background-color: #252d7628;
   padding-bottom: 20px;
   margin-bottom: 60px;
-  
 }
-.cherry{
+.cherry {
   margin-top: -70px;
   padding-top: 30px;
   background-color: #252d7628;
   padding-bottom: 20px;
   margin-bottom: 60px;
-  background-image:  url("../../assets/images/whitecherry.png");
-   background-repeat: no-repeat;
+  background-image: url("../../assets/images/whitecherry.png");
+  background-repeat: no-repeat;
 }
 
-#box1{
+#box1 {
   border-radius: 5px;
-  background-color: #252d76;
+  background-color: #252d76bc;
   color: white;
   font-size: medium;
 }
 
-#box2{
+#box2 {
   border-radius: 5px;
-  background-color: #252d76;
+  background-color: #252d76bc;
   color: white;
   font-size: medium;
-  list-style: none;
+ 
 }
-#box2 li{
+/* #box2 li {
   margin-left: 15px;
 }
 
-
 #box2 li::before {
   content: "\2022";
-  color: red; /* Change the color */
+  color: red; 
   font-weight: 900;
-  display: inline-block; /* Needed to add space between the bullet and the text */
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
-/* .bottomHome {
+} */
+.bottomHome {
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
-} */
+} 
+
 .ribbon {
   font-size: 16px !important;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -275,19 +259,9 @@
   right: 0;
   border-width: 1em 1em 0 0;
 }
-.bottomHome{
- flex:1;
- justify-content: center;
- display:flex;
- flex-wrap: wrap;
- flex-direction: row;
- align-items: center;
 
-}
-.resize-gif{
-  margin-bottom: 120px;
-}
-.partners1{
+
+.partners1 {
   background-image: url("../../assets/images/partnerI.jpg");
 
   /* Set a specific height */
@@ -297,9 +271,8 @@
   background-position: center;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  
 }
-.partners2{
+.partners2 {
   background-image: url("../../assets/images/partnerII.jpg");
 
   /* Set a specific height */
@@ -309,9 +282,8 @@
   background-position: center;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  
 }
-.partners3{
+.partners3 {
   background-image: url("../../assets/images/partnerIII.jpg");
 
   /* Set a specific height */
@@ -321,66 +293,54 @@
   background-position: center;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  
 }
-.partner-size{
+.partner-size {
   max-width: 350px;
   min-width: 300px;
   height: 250px;
- 
 }
-.marquee {
-  flex: 0 0 auto;
-  min-width: 100%;
-  z-index: 1;
+.resize-gif {
+  margin-bottom: 120px;
+  flex: 1;
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
-  animation-play-state: var(--play);
-  animation-delay: var(--delay);
-  animation-direction: var(--direction);
+  overflow: hidden;
 }
-.gif{
-  background-image:  url("../../assets/images/cherryGIF.gif");
-  background-repeat: no-repeat;
 
-}
-.gif-container{
+
+.gif-container {
   max-width: 600px;
   height: 300px;
 }
-.gif-p{
+.gif-p {
   margin-left: 20px;
   margin-right: 20px;
   font-size: x-large;
   letter-spacing: 2px;
-  color:#4f97df;
+  color: #4f97df;
   margin-top: 25px;
   margin-bottom: 10px;
   max-width: 500px;
   min-width: 200px;
-  display:flex;
-  flex-wrap:wrap;
-}
-@media (max-width: 600px) {
- .gif-p{
-  max-width: 300px;
- }
- .gif{
-  max-width: 300px;
- }
 }
 
-.iconDIV{
-  display:flex;
+
+.iconDIV {
+  display: flex;
   justify-content: center;
-  margin-left:40px;
-  margin-right:40px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: -20px;
   color: white;
 }
 
-.react-icons-home{
+.react-icons-home {
   color: white !important;
 }
+@media (max-width: 600px) {
+ 
+}
+

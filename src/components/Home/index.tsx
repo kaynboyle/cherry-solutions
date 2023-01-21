@@ -21,57 +21,65 @@ interface cardInterface {
 const cards: cardInterface[] = [
   {
     id: "1",
-    front: "Performance Intelligence",
-    back1: "Marine Terminal Operational Excellence",
-    back2: "DAaaS Install (Data Analytics as a Service)",
-    back3: "Tactical Sustainment & Governance",
-    href: "/consulting#performance-intelligence",
-    icon: <AiFillReconciliation size={50} />,
+    front: "Management Operating Systems (MOS)",
+    back1: "MOS is the set of",
+    back2: "tools, meetings, and behaviors",
+    back3: "used to manage people, processes, and technology.",
+    href: "/consulting#mos",
+    icon: <AiOutlineDotChart size={50} />,
+    
   },
   {
     id: "2",
-    front: "Applied Intelligence",
-    back1: "Collect, Process & Analyze Data",
-    back2: "Create Insights Identify Opportunities for Improvment",
-    back3: "Automate Actions",
-    href: "/consulting#applied-intelligence",
-    icon: <AiFillBulb size={50} />,
+    front: "Empowering Effective Management & Decision Making",
+    back1: "‘Before, During & After’",
+    back2: "",
+    back3: "integrated tools with a user manual ",
+    href: " ",
+    icon: <AiOutlineTeam size={50} />,
+   
   },
   {
     id: "3",
-    front: "Management Operating Systems (MOS)",
-    back1: "Tools,meetings, behaviors managing people and processes that",
-    back2: " deliver results",
-    back3: "Plan, Do, Check, Act Improvement Cycle",
-    href: "/consulting#mos",
-    icon: <AiOutlineDotChart size={50} />,
+    front: "Applied Intelligence",
+    back1: "Evolving to AI",
+    back2: "from designed, monitored, and managed HI",
+    back3: "(Human Intelligence)",
+    href: "/consulting#applied-intelligence",
+    icon: <AiFillBulb size={50} />,
+   
+    
   },
   {
     id: "4",
-    front: "CAPA Process Intelligence",
-    back1: "Corrective Action Preventative Action",
-    back2: "",
-    back3: " ",
-    href: "/consulting#capa",
-    icon: <AiOutlineSync size={50}/>,
+    front: "Performance Intelligence",
+    back1: "Evolving underperforming",
+    back2: "‘Business Intelligence’ to transform source data into Information:",
+    back3: "Identify, Action, and Eliminate Underperformance",
+    href: "/consulting#performance-intelligence",
+    icon: <AiFillReconciliation size={50} />,
+   
   },
   {
     id: "5",
-    front: "Empowering Effective Management & Decision Making",
-    back1: "Observe, Orient, Decide,",
-    back2: "Act",
-    back3: " ",
+    front: "Data Management Software Solutions",
+    back1: "Applied Resource ‘Stop-Gap’ Data:",
+    back2: "Payroll versus Time Tracking Equipment Utilization",
+    back3: "Commercial Design vs Actual",
     href: " ",
-    icon: <AiOutlineTeam size={50} />,
+    icon: <AiOutlineLaptop size={50} />,
+   
+    
   },
   {
     id: "6",
-    front: "Data Management Tools",
-    back1: "Collective Data Assistant",
-    back2: "Cherry Cola",
-    back3: "Cherry Pie",
-    href: " ",
-    icon: <AiOutlineLaptop size={50} />,
+    front: " CAPA Corrective Action Preventative Action",
+    back1: "Defect & Performance",
+    back2: " Variation Actioning as well as Intra/Interdepartmental Ownership and Outcome",
+    back3: "Integrated Transparency: PEOPLE + PROCESS + TECHNOLOGY",
+    href: "/consulting#capa",
+    icon: <AiOutlineSync size={50}/>,
+    
   },
 ];
 
@@ -100,15 +108,18 @@ const Home = () => {
           <div className="shadow-2xl" id="hero-text">
             <div className="background">
               <p>
-                Optimizing Container Terminal Performace, Tredictability & Transparancy.
+              <strong>
+              Optimizing Global Terminal Operations <br></br>
+and Integrated Marine and Intermodal Processes & Performance
+              </strong>
+
               </p>
               <a href="#learn-more" className="learn-more-button">
                 Learn More
               </a>
               <p> </p>
               <p>
-                Integrating People, Process & Technology by applying professional and
-                solution serivices for configuring and installing 'Success by Design'
+              By Applying State-Of-The-Art Software and Professional Services Solutions
               </p>
             </div>
           </div>
@@ -117,11 +128,10 @@ const Home = () => {
       <div className="results-box ">
         <div className="proven-results reveal">
           <p className="middle-p">
-            Develop and maintain a culture of operational excellence with a strategic
-            program and toolset
+          <strong>Establishing and sustaining a culture of Operational Excellence</strong> 
           </p>
           <p className="middle-p">
-            Supports increasing and evolving customer and shareholder requirements.
+          in support of increasing and evolving customer and shareholder requirements.
           </p>
         </div>
 
@@ -168,7 +178,7 @@ const Home = () => {
       <div className="photo3">
         <div className="three"></div>
       </div>
-      <div className="bottomHome resize-gif">
+      <div className="resize-gif">
         <div className="gif-container">
           <img src={require("../../assets/images/cherryGIF.gif")}></img>
         </div>
@@ -178,30 +188,51 @@ const Home = () => {
       </div>
       <div className="cherry">
         <div className="proven-results reveal">
-          <p> Proven Results </p>
+          <p> Proven Results and Notable Accomplishments</p>
         </div>
         <div className="results-flex">
           <div className="result-item" id="box1">
             <ul>
               <li>
-                Reduction of up to 15% of man-hour & Equipment hour per lift costs
+              Material reduction, up to 15%, of Labor & Equipment Hour-Per-Lift cost.
+                <ul>
+                  <li>Lift = Revenue generating ‘Through-Put’ unit, for example, an ISO Container </li>
+                </ul>
+                
               </li>
               <li>
-                Ongoing protection from entropy, preventing 1-3% of annual erosion
+              Ongoing protection from entropy, preventing 1-3%* of annual erosion
+                <ul>
+                  <li>Estimate of system and process erosion due in organic management systems</li>
+                </ul>
               </li>
               <li>
-                Startup ROI as measured in months and ongoing support cost fractional to
-                savings
+              Startup ROI as measured in months and ongoing support cost fractional to savings
+                <ul>
+                  <li>Program ‘Surge’ resource investment and ongoing savings vs. staff costs</li>
+                </ul>
               </li>
             </ul>
           </div>
 
           <div className="result-item" id="box2">
-            <p className="bold-text">Notable Cherry America technology</p>
-            <p>implementations include...</p>
-            <li>1st to implement longshore time tracking solution on US West Coast</li>
-            <li>1st to implement OCR, EPS technology on US West Coast</li>
-            <li>2+ decades of enhancing MTOs Business Intelligence Environments</li>
+            <ul>
+              <li>1st: Design & implement labor agency payroll to time tracking solution on US West Coast
+              <ul>
+                    <li>Transforming ‘Payroll’ into ‘Time Tracking’ for resource performance</li>
+                  </ul>
+              </li>
+              <li>1st: Design & implement comprehensive semi-automation deployment on US West Coast
+              <ul>
+                    <li>Integrating and deploying OCR, EPS, GOS, and TOS for performance management </li>
+                  </ul>
+              </li>
+              <li>2+ decades of enhancing MTOs and related terminal, warehouse, trucking-related ‘Business Intelligence’ Environments – Establishing Performance Intelligence Platforms
+              <ul>
+                    <li>In ‘Brownfield’, ‘Greenfield’ and Acquisition Transformation scenarios </li>
+                  </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
