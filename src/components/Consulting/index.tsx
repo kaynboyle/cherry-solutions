@@ -51,7 +51,7 @@ const Consulting = () => {
     return(
         <div id="consulting">
             <div id="top"className='header-wrap'>
-                <h1>Consulting</h1>
+                {/* <h1>Consulting</h1>
                 <div className="consultingHeader">
                     <div>
                         <a className="button-slide slide-right" href="#performance-intelligence">PI</a>
@@ -66,7 +66,7 @@ const Consulting = () => {
                         <a className="button-slide slide-right" href="#capa">CAPA</a>
                     </div>
                     
-                </div>
+                </div> */}
             </div>
             <div className="hero-software">
                 <div>

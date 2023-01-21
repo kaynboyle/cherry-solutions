@@ -22,7 +22,17 @@ const Header = () => {
           <Navbar.Toggle className="here" aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="link-color"  href="./consulting">Consulting</Nav.Link>
+              {/* <Nav.Link className="link-color"  href="./consulting">Consulting</Nav.Link> */}
+              <NavDropdown className="link-color" title="Professional Services" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="./consulting">All Professional Services</NavDropdown.Item>
+              <NavDropdown.Divider /> 
+                <NavDropdown.Item href="./consulting">Management Operating System (MOS)</NavDropdown.Item>
+                <NavDropdown.Item href="./consulting">Effective Management and Decision Making</NavDropdown.Item>
+                <NavDropdown.Item href="./consulting#applied-intelligence">Applied Intelligence (AI)</NavDropdown.Item>
+                {/* <NavDropdown.Divider /> */}
+                <NavDropdown.Item href="./consulting#performance-intelligence">Performance Intelligence (PI)</NavDropdown.Item>
+                <NavDropdown.Item href="./consulting#capa">CAPA: Corrective Action Preventative Action</NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link className="link-color" href="Software">Software</Nav.Link>
               <NavDropdown className="link-color" title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
