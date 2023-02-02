@@ -73,10 +73,11 @@ const Consulting = () => {
                     <img id="performance-intelligence"className='consultingimg1 mobile-friend' src={require("../../assets/images/Consulting1.jpeg")} alt="consulting"/>
                 </div> 
                 <div className="imageOverlay">
-                        <p >Management Operating System (MOS)</p> 
+                        <h2>Professional Services</h2> 
                 </div>    
             </div>
             <div className="box1row">
+                <h2 >Management Operating System (MOS)</h2>
                 <p  className="left-text">A MOS is the set of tools, meetings and behaviors used to manage your people, processes, and technology to<strong className="strongANDred reveal"> deliver results</strong></p>
             </div>
               

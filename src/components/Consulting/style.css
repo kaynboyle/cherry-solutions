@@ -110,7 +110,9 @@
 .strongANDred {
   color: red;
 }
-
+.box1row h2{
+  margin-bottom: 15px;
+}
 .box1row2 {
   background-color: whitesmoke;
   color: #252d76;
