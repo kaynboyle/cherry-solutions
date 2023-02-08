@@ -579,7 +579,7 @@
 
 }
 
-.reveal {
+/* .reveal {
   position: relative;
   transform: translateY(85px);
   opacity: 0;
@@ -589,7 +589,7 @@
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-}
+} */
 
 .slide-right:hover {
   box-shadow: inset 500px 30px 0 0 #c02210;
