@@ -145,13 +145,13 @@
 }
 
 .proven-results {
-  background-color: rgb(255, 255, 255);
+  background-color: #252d76;
   text-align: end;
   padding-right: 100px;
   padding-bottom: 10px;
   padding-top: 15px;
   margin-bottom: 50px;
-  color: #252d76;
+  color: white;
   /* font-weight: 700; */
   letter-spacing: 3px;
   font-size: x-large;
@@ -177,14 +177,14 @@
 
 #box1 {
   border-radius: 5px;
-  background-color: #252d76bc;
+  background-color: #03093ebc;
   color: white;
   font-size: medium;
 }
 
 #box2 {
   border-radius: 5px;
-  background-color: #252d76bc;
+  background-color: #03093ebc;
   color: white;
   font-size: medium;
  
@@ -320,7 +320,7 @@
   margin-right: 20px;
   font-size: x-large;
   letter-spacing: 2px;
-  color: #4f97df;
+  color: #252d76;
   margin-top: 25px;
   margin-bottom: 10px;
   max-width: 500px;
@@ -339,6 +339,18 @@
 
 .react-icons-home {
   color: white !important;
+}
+.partner-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner-child{
+ width: 300px;
+}
+.partner-child img{
+  width: 80%;
 }
 @media (max-width: 600px) {
  

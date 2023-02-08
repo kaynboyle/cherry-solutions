@@ -1,12 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ReactElement } from "react";
 import "./style.css";
 import "../../index.scss";
 import Button from "react-bootstrap/Button";
 import cn from "classnames";
-import { AiOutlineDotChart, AiFillBulb, AiOutlineTeam,AiOutlineLaptop,AiFillReconciliation,AiOutlineSync } from "react-icons/ai";
+import {
+  AiOutlineDotChart,
+  AiFillBulb,
+  AiOutlineTeam,
+  AiOutlineLaptop,
+  AiFillReconciliation,
+  AiOutlineSync,
+} from "react-icons/ai";
 import { FaLinkedin, FaYoutube, FaPencilAlt } from "react-icons/fa";
 import { IconContext, IconType } from "react-icons";
 import { GrPowerCycle } from "react-icons/gr";
+import { UrlWithStringQuery } from "url";
+import * as myImg from "../../assets/images/mos-circle-img.jpg";
 
 interface cardInterface {
   id: string;
@@ -18,6 +27,10 @@ interface cardInterface {
   icon: JSX.Element;
   children?: IconContext;
 }
+interface partnerInterface {
+  id: string;
+  source: ReactElement;
+}
 const cards: cardInterface[] = [
   {
     id: "1",
@@ -27,7 +40,6 @@ const cards: cardInterface[] = [
     back3: "used to manage people, processes, and technology.",
     href: "/consulting#mos",
     icon: <AiOutlineDotChart size={50} />,
-    
   },
   {
     id: "2",
@@ -37,7 +49,6 @@ const cards: cardInterface[] = [
     back3: "integrated tools with a user manual ",
     href: " ",
     icon: <AiOutlineTeam size={50} />,
-   
   },
   {
     id: "3",
@@ -47,8 +58,6 @@ const cards: cardInterface[] = [
     back3: "(Human Intelligence)",
     href: "/consulting#applied-intelligence",
     icon: <AiFillBulb size={50} />,
-   
-    
   },
   {
     id: "4",
@@ -58,7 +67,6 @@ const cards: cardInterface[] = [
     back3: "Identify, Action, and Eliminate Underperformance",
     href: "/consulting#performance-intelligence",
     icon: <AiFillReconciliation size={50} />,
-   
   },
   {
     id: "5",
@@ -68,18 +76,78 @@ const cards: cardInterface[] = [
     back3: "Commercial Design vs Actual",
     href: " ",
     icon: <AiOutlineLaptop size={50} />,
-   
-    
   },
   {
     id: "6",
     front: " CAPA Corrective Action Preventative Action",
     back1: "Defect & Performance",
-    back2: " Variation Actioning as well as Intra/Interdepartmental Ownership and Outcome",
+    back2:
+      " Variation Actioning as well as Intra/Interdepartmental Ownership and Outcome",
     back3: "Integrated Transparency: PEOPLE + PROCESS + TECHNOLOGY",
     href: "/consulting#capa",
-    icon: <AiOutlineSync size={50}/>,
-    
+    icon: <AiOutlineSync size={50} />,
+  },
+];
+const partners: partnerInterface[] = [
+  {
+    id: "1",
+    source: (
+      <img src={require("../../assets/images/chevron.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "2",
+    source: (
+      <img src={require("../../assets/images/amp.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "3",
+    source: (
+      <img src={require("../../assets/images/its.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "4",
+    source: (
+      <img src={require("../../assets/images/amazon.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "5",
+    source: (
+      <img src={require("../../assets/images/cargoVelocity.jpg")} alt="partner" />
+    ),
+  },
+  {
+    id: "6",
+    source: (
+      <img src={require("../../assets/images/endava.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "7",
+    source: (
+      <img src={require("../../assets/images/nautilus.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "8",
+    source: (
+      <img src={require("../../assets/images/pasha.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "9",
+    source: (
+      <img src={require("../../assets/images/Tong_Yang_Group_Logo.png")} alt="partner" />
+    ),
+  },
+  {
+    id: "10",
+    source: (
+      <img src={require("../../assets/images/yusen.png")} alt="partner" />
+    ),
   },
 ];
 
@@ -108,18 +176,18 @@ const Home = () => {
           <div className="shadow-2xl" id="hero-text">
             <div className="background">
               <p>
-              <strong>
-              Optimizing Global Terminal Operations <br></br>
-and Integrated Marine and Intermodal Processes & Performance
-              </strong>
-
+                <strong>
+                  Optimizing Global Terminal Operations <br></br>
+                  and Integrated Marine and Intermodal Processes & Performance
+                </strong>
               </p>
               <a href="#learn-more" className="learn-more-button">
                 Learn More
               </a>
               <p> </p>
               <p>
-              By Applying State-Of-The-Art Software and Professional Services Solutions
+                by Applying State-Of-The-Art Software and Professional Services
+                Solutions
               </p>
             </div>
           </div>
@@ -128,10 +196,12 @@ and Integrated Marine and Intermodal Processes & Performance
       <div className="results-box ">
         <div className="proven-results reveal">
           <p className="middle-p">
-          <strong>Establishing and sustaining a culture of Operational Excellence</strong> 
+            <strong>
+              Establishing and sustaining a culture of Operational Excellence
+            </strong>
           </p>
           <p className="middle-p">
-          in support of increasing and evolving customer and shareholder requirements.
+            in support of increasing and evolving customer and shareholder requirements.
           </p>
         </div>
 
@@ -144,13 +214,13 @@ and Integrated Marine and Intermodal Processes & Performance
                     <div className="card front">
                       <div className="card-body d-flex justify-content-center align-items-center">
                         <div className="iconDIV">
-                          <IconContext.Provider value={{ className: "react-icons-home" }}>
+                          <IconContext.Provider
+                            value={{ className: "react-icons-home" }}
+                          >
                             {card.icon}
                           </IconContext.Provider>
                         </div>
-                        <p className="card-text ">
-                          {card.front}
-                        </p>
+                        <p className="card-text ">{card.front}</p>
                       </div>
                     </div>
                     <div className="card back">
@@ -194,22 +264,31 @@ and Integrated Marine and Intermodal Processes & Performance
           <div className="result-item" id="box1">
             <ul>
               <li>
-              Material reduction, up to 15%, of Labor & Equipment Hour-Per-Lift cost.
+                Material reduction, up to 15%, of Labor & Equipment Hour-Per-Lift cost.
                 <ul>
-                  <li>Lift = Revenue generating ‘Through-Put’ unit, for example, an ISO Container </li>
-                </ul>
-                
-              </li>
-              <li>
-              Ongoing protection from entropy, preventing 1-3%* of annual erosion
-                <ul>
-                  <li>Estimate of system and process erosion due in organic management systems</li>
+                  <li>
+                    Lift = Revenue generating ‘Through-Put’ unit, for example, an ISO
+                    Container{" "}
+                  </li>
                 </ul>
               </li>
               <li>
-              Startup ROI as measured in months and ongoing support cost fractional to savings
+                Ongoing protection from entropy, preventing 1-3%* of annual erosion
                 <ul>
-                  <li>Program ‘Surge’ resource investment and ongoing savings vs. staff costs</li>
+                  <li>
+                    Estimate of system and process erosion due in organic management
+                    systems
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Startup ROI as measured in months and ongoing support cost fractional to
+                savings
+                <ul>
+                  <li>
+                    Program ‘Surge’ resource investment and ongoing savings vs. staff
+                    costs
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -217,20 +296,35 @@ and Integrated Marine and Intermodal Processes & Performance
 
           <div className="result-item" id="box2">
             <ul>
-              <li>1st: Design & implement labor agency payroll to time tracking solution on US West Coast
-              <ul>
-                    <li>Transforming ‘Payroll’ into ‘Time Tracking’ for resource performance</li>
-                  </ul>
+              <li>
+                1st: Design & implement labor agency payroll to time tracking solution
+                on US West Coast
+                <ul>
+                  <li>
+                    Transforming ‘Payroll’ into ‘Time Tracking’ for resource performance
+                  </li>
+                </ul>
               </li>
-              <li>1st: Design & implement comprehensive semi-automation deployment on US West Coast
-              <ul>
-                    <li>Integrating and deploying OCR, EPS, GOS, and TOS for performance management </li>
-                  </ul>
+              <li>
+                1st: Design & implement comprehensive semi-automation deployment on US
+                West Coast
+                <ul>
+                  <li>
+                    Integrating and deploying OCR, EPS, GOS, and TOS for performance
+                    management{" "}
+                  </li>
+                </ul>
               </li>
-              <li>2+ decades of enhancing MTOs and related terminal, warehouse, trucking-related ‘Business Intelligence’ Environments – Establishing Performance Intelligence Platforms
-              <ul>
-                    <li>In ‘Brownfield’, ‘Greenfield’ and Acquisition Transformation scenarios </li>
-                  </ul>
+              <li>
+                2+ decades of enhancing MTOs and related terminal, warehouse,
+                trucking-related ‘Business Intelligence’ Environments – Establishing
+                Performance Intelligence Platforms
+                <ul>
+                  <li>
+                    In ‘Brownfield’, ‘Greenfield’ and Acquisition Transformation
+                    scenarios{" "}
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -241,16 +335,10 @@ and Integrated Marine and Intermodal Processes & Performance
           Working with leading companies and partners
         </strong>
       </div>
-      <div className="bottomHome">
-        <div className="partner-size">
-          <div className="partners1"></div>
-        </div>
-        <div className="partner-size">
-          <div className="partners2"></div>
-        </div>
-        <div className="partner-size">
-          <div className="partners3"></div>
-        </div>
+      <div className="partner-flex">
+        {partners.map((partner) => {
+          return <div className="partner-child">{partner.source}</div>;
+        })}
       </div>
     </main>
   );
