@@ -4,7 +4,37 @@
 .scroll-snap{
   scroll-snap-type: y mandatory
 }
-
+.flex-row-justifyANDalign-center{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.equal-boxes p{
+  margin-top: 50px;
+  max-width: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color:#252d76;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.center-text{
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color:#252d76;
+  letter-spacing: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.max-width-500{
+  max-width: 400px!important;
+}
 .header-wrap {
   background: linear-gradient(#7aa6d1e4, #7aa6d1e4);
   font-weight: bolder;
@@ -19,6 +49,7 @@
   font-weight: 700;
 }
 
+
 .consultingHeader {
   display: flex;
   flex-direction: row;
@@ -28,7 +59,8 @@
   justify-content: center;
   background-color: white;
   margin-bottom: 10px;
-}.hero-software{
+}
+.hero-software{
   display:flex;
   flex-direction: row;
   justify-content: center;
@@ -106,7 +138,14 @@
   padding-bottom: 80px;
   letter-spacing: 2px;
 }
-
+.shortened-row{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.background-blueONwhite{
+  background-color: white;
+  color:#252d76;
+}
 .strongANDred {
   color: red;
 }
@@ -146,25 +185,62 @@
   background-color: #ffffff60;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   justify-content: flex-end;
   margin-right: 10px;
+  align-items: center;
 }
 
 .box1 {
-  background-color: #7aa6d1e4;
+  background-color: #7aa6d172;
   color: #252d76;
   padding: 2vh 10vw 2vh 10vw;
   margin: 5px;
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 20px;
-  text-align: center;
+  text-align: left;
   max-width: 50vw;
+}
+.bottom-red-underline{
+  padding-bottom: 10px;
+  border-bottom: 3px dotted #c02210;
+}
+
+.text-align-center{
+  text-align: center;
+}
+.paddingTB-40{
+  padding-top: 45px!important;
+  padding-bottom: 45px!important;
+}
+.paddingTB-10{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+}
+.marginB-80{
+  margin-bottom: 80px;
+}
+.marginT-100{
+  margin-top: 100px;
+}
+.textDB{
+  color:#121743
+}
+.margin-rect{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.backgroundDB{
+  background-color: #252d76;
+}
+.backgroundWhite{
+  background-color: white;
 }
 
 .imageFlexcol img {
-  padding-top: 20px;
+ 
   background-color: #ffffff60;
   margin-top: 30px;
   opacity: 0.9;
@@ -205,14 +281,21 @@
   padding-right: 2vw;
 }
 .logo-content-wrapper div {
-  max-width: 30vw;
+  max-width: 400px;
   margin-right: 10px;
+  font-size: larger;
 }
 .logo-content-wrapper ul {
   padding-top: 10vh;
   padding-bottom: 10vh;
   max-width: 60vw;
   list-style: none;
+}
+.logo-content-wrapper ul p{
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding: 10px 70px;
 }
 .logo-content-wrapper ul li::before {
   content: "☑"; /* Insert content that looks like bullets */
@@ -456,7 +539,7 @@
   text-align: center!important;
 }
 .does-you-mos-work{
-  background-color: #7aa6d1e4;
+  background-color: #f2f6fae4;
   padding-bottom: 30px;
   background-size: cover;
 }
@@ -478,19 +561,42 @@
   margin-bottom: 20px;
 }
 .mos-circle p{
-  text-align: center;
-  background-color: white;
+  text-align: left;
   font-weight: 700;
   font-size: x-large;
   color:#252d76;
   letter-spacing: 2px;
   max-width: 350px;
   padding: 10px;
+  padding-left: 20px;
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 80px;
   padding-bottom: 80px;
+  border-left: 2px solid #c02210;
 
+}
+.hypothesis{
+  text-align: left;
+  font-weight: 700;
+  font-size: x-large;
+  color:#252d76;
+  letter-spacing: 2px;
+  max-width: 350px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-left: 2px solid #c02210;
+  border-right: 2px solid #c02210;
+}
+.red-border-right{
+  border-right: 2px solid #c02210;
+  border-left: 2px solid #c02210;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .mos-graph-title{
   font-size: large;

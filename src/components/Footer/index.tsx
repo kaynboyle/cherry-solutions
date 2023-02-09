@@ -16,7 +16,7 @@ const Footer = () => {
                 </IconContext.Provider> */}
                 <div className="flex-footer-links">
                     <div className="footer-divs ">
-                        <p className="button-slideF slide-rightF" >Professional Services</p>
+                        <p>Professional Services</p>
                       
                         
                             <a>Management Operating System (MOS)</a>
@@ -27,7 +27,7 @@ const Footer = () => {
                         
                     </div>
                     <div className="footer-divs">
-                        <p className="button-slideF slide-rightF">Data Management Tools</p>
+                        <p >Data Management Tools</p>
                         
                             <a>Cherry COLA: Cherry Collective Data Assistant</a><br></br>
                             <a>Cherry Performance Intelligence Engine (PIE)</a>
@@ -35,7 +35,7 @@ const Footer = () => {
                         
                     </div>
                     <div className="footer-divs">
-                        <p className="button-slideF slide-rightF">About Us</p>
+                        <p className="">About Us</p>
                         
                        
                             <a>Meet the Team</a>
