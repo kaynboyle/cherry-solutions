@@ -50,7 +50,8 @@ const Consulting = () => {
 
     return(
         <div id="consulting">
-            <div id="top"className='header-wrap'>
+            {/* id="top"className='header-wrap' */}
+            <div>
                 {/* <h1>Consulting</h1>
                 <div className="consultingHeader">
                     <div>
@@ -103,16 +104,17 @@ const Consulting = () => {
                     </div>
                 </div>
             </div>
-            <div className="box1row">
+            <div className="box1row shortened-row">
                 <p  className="left-text">The MOS enables a strict process of <strong className="strongANDred reveal">Plan. Do. Check. Act.</strong> This improvement cycle enables <br></br>control and steady process performance improvement. </p>
             </div>
-            <div className="proven-results">
+            <div className="proven-results background-blueONwhite">
                     <p className="middle-p x-large"><strong>All Industrial Plants (Terminals) have a MOS</strong></p>
                 </div>
             <div className="does-you-mos-work">
+                
                 <div className="imageFlexcol consultingCol1 mos-circle">
                     <div><img  src={require("../../assets/images/mos-circle-img.jpg")} alt="consulting"/></div>
-                    <div><p>Key Question:<br></br> ‘Does your MOS work?’</p></div> 
+                    <div><p className="reveal">Key Question:<br></br> ‘Does your MOS work?’</p></div> 
                             
 
                 </div>
@@ -168,27 +170,86 @@ const Consulting = () => {
                     
                 </div>
             </div>
+            <div className="box1row">
+                <h2 >Effective Management and Decision Making</h2>
+                <p  className="left-text"><strong className="strongANDred reveal"> Observe, Orient, Decide Act</strong></p>
+            </div>
+            <div className="flex-row-justifyANDalign-center equal-boxes">
+                <p className='hypothesis'>Hypothesis</p>
+                <p className="red-border-right">Legacy Management Operating Systems at various terminals have eroded, and now lack cohesiveness and transparency; leading to asset underperformance. </p>
+            </div>
             <div className='consulting1-flex'>
                     
                 <div className="consultingCol1 reveal">
                     <div className="box1">
                             <p>
-                                Performance Intelligence <br></br>connects the power of information and AI to human insight giving the people
-                                behind every day essential information they need to <br></br><strong>unlock a new           level of performance.</strong>
-                                
+                            An audit of the current state of people, process, and technology investments in the context of how it is performing as the de facto ‘Management Operating System will isolate GAPS and develop both:
                             </p>
                      </div>
                      <div className="box1 ">
-                        <p>Recognize
-                                new opportunities, accelerate digital transformation, realize growth, and drive sustainability.
-                        </p>
+                        <li> A formally structured Strategic Master Plan linking ‘Optimal Future State’ to tactical objectives, milestones, and resources.</li>
+                        <li>
+                        Design integration of Financial Reporting (Accounting) and Operational Reporting (Management Accounting) sources to the<br></br> ‘Unit of Work’ / Cost = Zero Based</li>
+                        <li>
+                        A Plan and measurable tactical momentum for making terminal assets transparently perform to their present capability and progress against ‘Optimal’ as defined by the Master Plan. 
+                        </li> 
                      </div>
                 </div>
+
+
+                
                 <div className="imageFlexcol">
                         <img className="mobile-friend" src={require("../../assets/images/Consulting2.jpeg")} alt="consulting"/>
                 </div>
                 
             </div>
+            <div className='flex-row-justifyANDalign-center marginB-80 margin-rect backgroundDB ' >
+                <p className="red-border-right center-text max-width-500 paddingTB-40 backgroundWhite reveal">A formal, designed, and installed, Management Operating System program will tune existing resources as well as identify gaps in the toolset <br></br> <strong>(People, Process, and Technology)</strong> required for the global terminal operator to optimize their terminal investment. </p>
+                <p className="red-border-right center-text max-width-500 backgroundWhite reveal">When a Terminal defaults to what appears to be  ‘Fighting Fires,’ identifying perceived tactical ‘Gaps’ via service or other performance failures without root cause identification of the true ‘Gap’ between <strong>ACTUAL and OPTIMAL</strong> it falls into a reactionary cycle. This reactionary posture and lack of transparency is a function of process, practice, and tool ‘GAP’ in their management system </p>
+            </div>
+            
+            
+            <div className="photo3 margin-rect">
+                <div className="three"></div>
+            </div> 
+            
+            <div className="box1row2 upper-filter">
+                <div className="logo-content-wrapper">
+                    <div>
+                        <p className="bottom-red-underline">Resolving GAP and empowering terminal management requires the implementation of a Process Management Program, one leading to a new way of working, acting, and thinking. </p>
+                        <p>Change begins with PM 1 being driven by the MOS project leader.
+                        The functions of this ‘role’ begin to transition to terminal  departmental management as staff is onboarded to the program: 
+
+
+                        </p>
+                        
+                    </div>
+                    
+                        <ul>
+                            <li>PM 1 core competencies integrate into terminal management.  
+                            </li>
+                            <p>The Program lead leans more into the PM 2 role as the terminal <br></br>team matures.</p>
+                            <li>PM 2 also onboards terminal resources as internal resources are aligned to the continuous improvement process regime and culture. 
+                            </li>
+                            <p>The outcome of the Program is the new way of working = PM 3 </p>
+                        </ul>
+                        
+                    </div>
+            </div>
+            <div className='ai-title'>
+                <p className="marginT-100 margin-rect textDB">
+                PM 1 -<strong>Project management</strong> is the application of processes, methods, skills, knowledge, and experience to achieve specific project objectives according to the project acceptance criteria within agreed parameters. 
+                <li className="paddingTB-10 text-align-center">Project management has final deliverables that are constrained to a finite timescale and budget.</li>
+
+                <br></br>PM 2 - <strong>Program management</strong> is the process of managing programs mapped to business objectives that improve organizational performance. 
+                <li className="paddingTB-10 text-align-center">Program managers oversee and coordinate the various projects and other strategic initiatives throughout an organization.</li>
+
+                <br></br>PM 3 - <strong>Process Management</strong> refers to aligning processes with an organization's strategic goals, designing, and implementing process architectures, establishing process measurement systems that align with organizational goals, and educating and organizing managers so that they will manage processes effectively.
+
+                </p>
+
+            </div>
+
             <div className="box1row2 upper-filter">
                 <div className="logo-content-wrapper">
                     <div>
