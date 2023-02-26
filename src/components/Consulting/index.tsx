@@ -24,6 +24,29 @@ const Consulting = () => {
         }
         
     ];
+    interface pmInterface{
+        id:string;
+        title: string;
+        content: string;
+    };
+    const pm: pmInterface[]=[
+        {
+            id:"1",
+            title: "PM 1 - Project management",
+            content:"is the application of processes, methods, skills, knowledge, and experience to achieve specific project objectives according to the project acceptance criteria within agreed parameters. Project management has final deliverables that are constrained to a finite timescale and budget."
+        },
+        {
+            id:"2",
+            title: "PM 2 - Program management",
+            content:"is the process of managing programs mapped to business objectives that improve organizational performance. Program managers oversee and coordinate the various projects and other strategic initiatives throughout an organization."
+        },
+        {
+            id:"3",
+            title: "PM 3 - Process Management",
+            content:"refers to aligning processes with an organization's strategic goals as well as designing, and implementing process architectures, establishing process measurement systems that align with organizational goals, and educating and organizing managers so that they will manage processes effectively."
+        }
+        
+    ];
     interface MOSInterface{
         id:string;
         title: string;
@@ -235,19 +258,22 @@ const Consulting = () => {
                         </ul>
                         
                     </div>
+                    
             </div>
+            
             <div className='ai-title'>
-                <p className="marginT-100 margin-rect textDB">
-                PM 1 -<strong>Project management</strong> is the application of processes, methods, skills, knowledge, and experience to achieve specific project objectives according to the project acceptance criteria within agreed parameters. 
-                <li className="paddingTB-10 text-align-center">Project management has final deliverables that are constrained to a finite timescale and budget.</li>
+                <div className='pm'>
+                    {pm.map((project) => {
+                    return (
+                        <div>
+                            <p><strong><u>{project.title}</u></strong></p>
+                            <p>{project.content}</p>
+                        </div>
+                        )
+                        })
+                    };
 
-                <br></br>PM 2 - <strong>Program management</strong> is the process of managing programs mapped to business objectives that improve organizational performance. 
-                <li className="paddingTB-10 text-align-center">Program managers oversee and coordinate the various projects and other strategic initiatives throughout an organization.</li>
-
-                <br></br>PM 3 - <strong>Process Management</strong> refers to aligning processes with an organization's strategic goals, designing, and implementing process architectures, establishing process measurement systems that align with organizational goals, and educating and organizing managers so that they will manage processes effectively.
-
-                </p>
-
+                </div>
             </div>
 
             <div className="box1row2 upper-filter">
