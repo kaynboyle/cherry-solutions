@@ -316,6 +316,7 @@
 .ai-title {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   letter-spacing: 2px;
   background-color: #7aa6d1e4;
   padding-top: 10vh;
@@ -425,6 +426,31 @@
   margin-top: 10px;
 }
 .stickies div p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center!important;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.pm div {
+  background-color: #252d76;
+  max-width: 350px;
+  text-align: left;
+  color: white;
+  font-size: small;
+  letter-spacing: 3px;
+  padding-top: 20px;
+  min-width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.pm div p {
   margin-left: 10px;
   margin-right: 10px;
 }
