@@ -8,11 +8,62 @@
   padding-bottom: 30px;
   color: #414355;
 }
+.headerAbout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .div1About p {
   background-color: white;
   padding: 8px;
 }
 
+.bgRED{
+  background-color: #c02210;
+
+}
+.bgLTBLUE{
+  background-color: #7aa6d1e4!important;
+}
+.fWHITE{
+  color:#fff
+}
+.fBLACK{
+  color:#20212a!important;
+}
+
+.text-align-center{
+  text-align: center;
+}
+.borders-20{
+ padding: 50px;
+}
+.fWEIGHT700{
+  font-weight: 700;
+}
+
+.width80per{
+  width: 70%;
+}
+.width50per{
+  width:50%
+}
+.width20per{
+  width: 30%;
+}
+.fXLARGE{
+  font-size: x-large;
+}
+.fLARGE{
+  font-size: large;
+}
+.flexRow{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .ribbon {
   font-size: 16px !important;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -20,7 +71,7 @@
   width: 50%;
 
   position: relative;
-  background: #c02210;
+  background: #252d76;
   color: #fff;
   text-align: center;
   padding: 1em 2em; /* Adjust to suit */
@@ -32,7 +83,7 @@
   position: absolute;
   display: block;
   bottom: -1em;
-  border: 1.5em solid #986767;
+  border: 1.5em solid #525782;
   z-index: -1;
 }
 .ribbon:before {
@@ -51,7 +102,7 @@
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: rgb(128, 48, 48) transparent transparent transparent;
+  border-color: rgb(19, 14, 60) transparent transparent transparent;
   bottom: -1em;
 }
 .ribbon .ribbon-content:before {
@@ -111,7 +162,7 @@
   margin-bottom: 300px;
 }
 .brian {
-  border: 5px solid #c02210;
+  border: 2px solid #252d76;
   background-image: url("../../assets/images/BBPic.PNG");
 
   /* Set a specific height */
@@ -124,7 +175,7 @@
   filter: drop-shadow(15px 10px 4px #292a5654);
 }
 .damon {
-  border: 5px solid #c02210;
+  border: 2px solid #252d76;
   background-image: url("../../assets/images/Damon.PNG");
 
   /* Set a specific height */
@@ -138,7 +189,7 @@
 }
 
 .norm {
-  border: 5px solid #c02210;
+  border: 2px solid #252d76;
   background-image: url("../../assets/images/norm.JPG");
 
   /* Set a specific height */
@@ -151,8 +202,8 @@
   filter: drop-shadow(15px 10px 4px #292a5654);
 }
 .jim {
-  border: 5px solid #c02210;
-  background-image: url("../../assets/images/temp.png");
+  border: 2px solid #252d76;
+  background-image: url("../../assets/images/James_Britton.png");
 
   /* Set a specific height */
   height: 600%;
@@ -167,8 +218,31 @@
 .about-text{
     background-color: #252d76;
     color:#fff;
-    font-weight: 700;
+    /* font-weight: 700; */
     margin-top: 10px;
     padding: 5px;
     
+}
+.cherryamericaIMG{
+  max-width: 40%;
+}
+
+.margin-left-50px{
+  margin-left: 50px;
+}
+.margin-top-20px{
+  margin-top: 20px
+}
+.flex-center-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.round{
+  border-radius: 20px;
+  height: 250px;
+}
+.br-10{
+  border-radius: 10px;
 }

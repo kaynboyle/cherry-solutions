@@ -4,17 +4,17 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+// "https://cherry-solutions.com/wp-content/uploads/2021/04/Cherry_logo.png"
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="xl" bg="light" variant="light">
+      <Navbar collapseOnSelect expand="xl" bg="white" variant="light">
         <Container>
           <Navbar.Brand href="/">
             <img
-              src="https://cherry-solutions.com/wp-content/uploads/2021/04/Cherry_logo.png"
+              src={require("../../assets/images/cherry-america.png")}
               width="90%"
-              height="30"
+              height="90"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
