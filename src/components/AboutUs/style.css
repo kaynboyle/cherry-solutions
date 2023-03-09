@@ -46,9 +46,11 @@
 
 .width80per{
   width: 70%;
+  min-width: 450px;
 }
 .width50per{
-  width:50%
+  width:50%;
+  min-width: 450px
 }
 .width20per{
   width: 30%;
@@ -126,7 +128,6 @@
 }
 
 .acomplishments-ul {
-  background-color: white;
   padding: 5px;
   text-align: start;
   list-style: none;
@@ -245,4 +246,16 @@
 }
 .br-10{
   border-radius: 10px;
+}
+
+.text-align-left{
+  text-align: left;
+  text-align:start
+}
+.flex-center-collum-wrap{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }

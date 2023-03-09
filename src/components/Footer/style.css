@@ -46,7 +46,7 @@
 
 
   .footer-divs{
-    max-width: 300px;
+    max-width: 350px;
     margin-left: 20px;
     margin-right: 20px;
     text-align: start;
@@ -87,5 +87,15 @@
    
   
   }
- 
+  .strongANDred {
+    color: red;
+  }
   
+  .footer-links{
+    color:rgba(37, 45, 118, 0.599)!important;
+    text-decoration: none;
+  }
+  .footer-links:hover{
+    color: #374b60!important;
+    text-decoration: none;
+  }

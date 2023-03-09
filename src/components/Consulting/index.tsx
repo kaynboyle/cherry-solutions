@@ -94,7 +94,7 @@ const Consulting = () => {
             </div>
             <div className="hero-software">
                 <div>
-                    <img id="performance-intelligence"className='consultingimg1 mobile-friend' src={require("../../assets/images/Consulting1.jpeg")} alt="consulting"/>
+                    <img className='consultingimg1 mobile-friend' src={require("../../assets/images/Consulting1.jpeg")} alt="consulting"/>
                 </div> 
                 <div className="imageOverlay">
                         <h2>Professional Services</h2> 
@@ -194,7 +194,7 @@ const Consulting = () => {
                 </div>
             </div>
             <div className="box1row">
-                <h2 >Effective Management and Decision Making</h2>
+                <h2 id="Effective-Management">Effective Management and Decision Making</h2>
                 <p  className="left-text"><strong className="strongANDred reveal"> Observe, Orient, Decide Act</strong></p>
             </div>
             <div className="flex-row-justifyANDalign-center equal-boxes">

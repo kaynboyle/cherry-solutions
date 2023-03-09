@@ -37,14 +37,39 @@
     background-color: #252d76;
     color: white;
     font-size: large;
-    padding: 20% 5%;
+  
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     
     letter-spacing: 2px;
   }
 
   .left-text {
     text-align: center;
+  }
+
+  .software-ul {
+    padding: 5px;
+    text-align: start;
+    list-style: none;
+    font-weight:700;
+  }
+  .software-ul li {
+    margin-left: 20px;
+  }
+  .software-ul li::before {
+    content: "\2022";
+    color: rgb(255, 255, 255); /* Change the color */
+    font-weight: 900;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em;
+    margin-left: -1em;
+  }
+  .marginLR5160px100px{
+    margin-left: 110px;
+    margin-right: 80px
+  }
+  .margin-top-60px{
+    margin-top: 60px;
   }

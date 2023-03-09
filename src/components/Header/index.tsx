@@ -15,7 +15,7 @@ const Header = () => {
               src={require("../../assets/images/cherry-america.png")}
               width="90%"
               height="90"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top brand-hover"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
@@ -23,29 +23,28 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               {/* <Nav.Link className="link-color"  href="./consulting">Consulting</Nav.Link> */}
+              <Nav.Link className="link-color" href="./">
+                Home
+              </Nav.Link>
               <NavDropdown className="link-color" title="Professional Services" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="./consulting">All Professional Services</NavDropdown.Item>
+              <NavDropdown.Item href="./consulting">Professional Services</NavDropdown.Item>
               <NavDropdown.Divider /> 
-                <NavDropdown.Item href="./consulting">Management Operating System (MOS)</NavDropdown.Item>
+                <NavDropdown.Item href="./consulting#MOS">Management Operating System (MOS)</NavDropdown.Item>
                 <NavDropdown.Item href="./consulting">Effective Management and Decision Making</NavDropdown.Item>
                 <NavDropdown.Item href="./consulting#applied-intelligence">Applied Intelligence (AI)</NavDropdown.Item>
                 {/* <NavDropdown.Divider /> */}
                 <NavDropdown.Item href="./consulting#performance-intelligence">Performance Intelligence (PI)</NavDropdown.Item>
                 <NavDropdown.Item href="./consulting#capa">CAPA: Corrective Action Preventative Action</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="link-color" href="Software">Software</Nav.Link>
-              <NavDropdown className="link-color" title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <NavDropdown className="link-color" title="Software" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="./Software">Software</NavDropdown.Item>
+              <NavDropdown.Divider /> 
+                <NavDropdown.Item href="./Software#cherry-COLA">Cherry COLA</NavDropdown.Item>
+                <NavDropdown.Item href="./Software#cherry-PIE">Cherry PIE</NavDropdown.Item>
               </NavDropdown>
+
               <Nav.Link className="link-color" href="./about-us">
                 About Us
-              </Nav.Link>
-              <Nav.Link className="link-color contact" eventKey={2} href="./contact-us">
-                Contact Us
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
