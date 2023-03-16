@@ -51,6 +51,16 @@ const cards: cardInterface[] = [
     icon: <AiOutlineTeam size={50} />,
   },
   {
+    id: "6",
+    front: " CAPA Corrective Action Preventative Action",
+    back1: "Defect & Performance",
+    back2:
+      " Variation Actioning as well as Intra/Interdepartmental Ownership and Outcome",
+    back3: "Integrated Transparency: PEOPLE + PROCESS + TECHNOLOGY",
+    href: "/consulting#capa",
+    icon: <AiOutlineSync size={50} />,
+  },
+  {
     id: "3",
     front: "Applied Intelligence",
     back1: "Evolving to AI",
@@ -61,7 +71,7 @@ const cards: cardInterface[] = [
   },
   {
     id: "4",
-    front: "Performance Intelligence",
+    front: "Performance Intelligence (Cherry PIE)",
     back1: "Evolving underperforming",
     back2: "‘Business Intelligence’ to transform source data into Information:",
     back3: "Identify, Action, and Eliminate Underperformance",
@@ -70,23 +80,14 @@ const cards: cardInterface[] = [
   },
   {
     id: "5",
-    front: "Data Management Software Solutions",
+    front: "Cherry COLA",
     back1: "Applied Resource ‘Stop-Gap’ Data:",
     back2: "Payroll versus Time Tracking Equipment Utilization",
     back3: "Commercial Design vs Actual",
     href: " ",
     icon: <AiOutlineLaptop size={50} />,
-  },
-  {
-    id: "6",
-    front: " CAPA Corrective Action Preventative Action",
-    back1: "Defect & Performance",
-    back2:
-      " Variation Actioning as well as Intra/Interdepartmental Ownership and Outcome",
-    back3: "Integrated Transparency: PEOPLE + PROCESS + TECHNOLOGY",
-    href: "/consulting#capa",
-    icon: <AiOutlineSync size={50} />,
-  },
+  }
+  
 ];
 const partners: partnerInterface[] = [
   {

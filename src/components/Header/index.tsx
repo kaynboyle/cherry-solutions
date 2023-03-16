@@ -31,16 +31,16 @@ const Header = () => {
               <NavDropdown.Divider /> 
                 <NavDropdown.Item href="./consulting#MOS">Management Operating System (MOS)</NavDropdown.Item>
                 <NavDropdown.Item href="./consulting">Effective Management and Decision Making</NavDropdown.Item>
-                <NavDropdown.Item href="./consulting#applied-intelligence">Applied Intelligence (AI)</NavDropdown.Item>
-                {/* <NavDropdown.Divider /> */}
-                <NavDropdown.Item href="./consulting#performance-intelligence">Performance Intelligence (PI)</NavDropdown.Item>
                 <NavDropdown.Item href="./consulting#capa">CAPA: Corrective Action Preventative Action</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown className="link-color" title="Software" id="collasible-nav-dropdown">
               <NavDropdown.Item href="./Software">Software</NavDropdown.Item>
               <NavDropdown.Divider /> 
+                <NavDropdown.Item href="./consulting#applied-intelligence">Applied Intelligence (AI)</NavDropdown.Item>
+                {/* <NavDropdown.Divider /> */}
+                <NavDropdown.Item href="./consulting#performance-intelligence">Performance Intelligence (PI)</NavDropdown.Item>
                 <NavDropdown.Item href="./Software#cherry-COLA">Cherry COLA</NavDropdown.Item>
-                <NavDropdown.Item href="./Software#cherry-PIE">Cherry PIE</NavDropdown.Item>
+                {/* <NavDropdown.Item href="./Software#cherry-PIE">Cherry PIE</NavDropdown.Item> */}
               </NavDropdown>
 
               <Nav.Link className="link-color" href="./about-us">

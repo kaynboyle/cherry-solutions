@@ -241,10 +241,9 @@
 
 .imageFlexcol img {
  
-  background-color: #ffffff60;
+  background-color: #ffffff;
   margin-top: 30px;
   opacity: 0.9;
-  filter: drop-shadow(5px 10px 4px #86869f65);
   max-width: 45vw;
 }
 .imageFlexcol {
@@ -565,7 +564,6 @@
   text-align: center!important;
 }
 .does-you-mos-work{
-  background-color: #f2f6fae4;
   padding-bottom: 30px;
   background-size: cover;
 }
