@@ -172,6 +172,17 @@
 .left-text {
   text-align: center;
 }
+
+.font600{
+  font-weight: 600;
+}
+.fBLUE{
+  color:#252d76
+}
+.vertical-text{
+  writing-mode: vertical-rl;
+  
+}
 .consultingCol1 {
   display: flex;
   flex-direction: column;
@@ -404,17 +415,16 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: -250px;
   margin-bottom: 50px;
 }
 .stickies div {
-  background-color: #c02210;
-  max-width: 200px;
+  background-color: #252d76;
+  max-width: 300px;
   text-align: center;
   color: white;
-  font-size: large;
+  font-size: medium;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 300;
   padding-top: 20px;
   display: flex;
   justify-content: center;
@@ -537,6 +547,7 @@
   /* margin-left: 5%;
   margin-right: 5%; */
   flex-wrap: wrap;
+  
   /* border: 2px solid #252d76; */
 }
 .size-contain p{
