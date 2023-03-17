@@ -73,3 +73,21 @@
   .margin-top-60px{
     margin-top: 60px;
   }
+  .LH2{
+    line-height: 1cm;
+  }
+  .LHpoint5{
+    line-height: .8cm;
+  }
+  .bgWHITE{
+    background-color: white;
+  }
+  .borders-20-5{
+    border-left: 20px;
+    border-right: 20px;
+    border-top: 60px;
+    border-bottom: 5px;
+  }
+  .width500{
+    width: 500px;
+  }
