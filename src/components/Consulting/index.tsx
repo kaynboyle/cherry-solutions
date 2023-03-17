@@ -12,15 +12,15 @@ const Consulting = () => {
     const stickys: stickyInterface[]=[
         {
             id:"1",
-            content:"Collect, Process and Analyze your data"
+            content:"CAPA: Corrective Action, Preventative Action - Technology, People & Process defect control system."
         },
         {
             id:"2",
-            content:"Create insights to identify clear opportunities to act on "
+            content:"CAPA supports the MOS Before, During, and After MOS installation."
         },
         {
             id:"3",
-            content:"Automate redundant actions"
+            content:"For optimal effectiveness, a COTS service desk app is used by Tech-Ops and in the CAPA process."
         }
         
     ];
@@ -101,11 +101,11 @@ const Consulting = () => {
                 </div>    
             </div>
             <div className="box1row">
-                <h2 >Management Operating System (MOS)</h2>
-                <p  className="left-text">A MOS is the set of tools, meetings and behaviors used to manage your people, processes, and technology to<strong className="strongANDred reveal"> deliver results</strong></p>
+                <h2 id="MOS" >Management Operating System (MOS)</h2>
+                <p className="left-text">A MOS is the set of tools, meetings and behaviors used to manage your people, processes, and technology to<strong className="strongANDred reveal"> deliver results</strong></p>
             </div>
               
-                <div id="mos" className="consultingIMG3">
+                <div className="consultingIMG3">
                 <div className="box1row2 closer">
                             <p className="left-text"> A Key Distinction TOS vs. MOS
                             </p>
@@ -150,7 +150,7 @@ const Consulting = () => {
                         <div className="graph-div">
                                 <div className="mos-height"></div>
                         </div>
-                        <p>Pace of Improvment</p>
+                        <p><strong>Pace of Improvment</strong><br></br>(Low Success to High Success)</p>
                     </div>
                     <div className="fightingfires-ect">
                         <ul className="greater-ul">
@@ -193,8 +193,8 @@ const Consulting = () => {
                     
                 </div>
             </div>
-            <div className="box1row">
-                <h2 id="Effective-Management">Effective Management and Decision Making</h2>
+            <div id="EffectiveManagement" className="box1row">
+                <h2 >Effective Management and Decision Making</h2>
                 <p  className="left-text"><strong className="strongANDred reveal"> Observe, Orient, Decide Act</strong></p>
             </div>
             <div className="flex-row-justifyANDalign-center equal-boxes">
@@ -276,114 +276,13 @@ const Consulting = () => {
                 </div>
             </div>
 
-            <div className="box1row2 upper-filter">
-                <div className="logo-content-wrapper">
-                    <div>
-                        <p>Elevate your systems and empower your teams. With our processes, toolsets and metrics, Cherry America can help you get your processes under control and achieve ongoing peace of mind from:
-                        </p>
-                    </div>
-                    
-                        <ul>
-                            <li>Strategic Marine Terminal Operational Excellence 
-                            </li>
-                            <li>Data Analytics as a Service (DAaaS) 
-                            </li>
-                            <li>Tactical Sustainment & Governance 
-                            </li>
-                        </ul>
-                        
-                    </div>
-            </div>
-
-            <div id="applied-intelligence"  className="ai-title">
-                <div className="title-p">
-                    <p >Applied Intelligence</p>
-                </div>
-                <div className="box3row">
-                    <img className='consultingimg2 mobile-friend reveal' src={require("../../assets/images/aiIMG2.jpg")} alt="consulting"/>
-                    <p className="right-text">Applied Intelligence combines artificial intelligence (AI) and machine learning technologies with data analytics, automation and human ingenuity that solve complex business problems.</p>
-                    
-                </div>
-            </div>
-            <p className="thirdBlock">  It is a smarter, faster and more effective approach to collect, process, and analyze data to create insights to act on, while automating those actions where possible to unlock business value.</p>
-            <div className='stickies'>
-                {stickys.map((sticky) => {
-                return (
-                    <div>
-                        <p>{sticky.content}</p>
-                    </div>
-                    )
-                    })
-                };
-
-            </div>
-            <div id="mos" className="consultingIMG3">
-                <div className="mos-title reveal">
-                    <div className="mos-name"><p>Management Operating System<br></br>(MOS)</p></div>
-                    <div className="threeheight">
-                        <div ><p>A Management Operating System is the set of tools, meetings, and behaviors used to manage people and processes.</p>
-                        </div>
-                        <div><p>This system follows a strict process of<br></br> <strong className="strongANDred">Plan. Do. Check. Act.</strong><br></br>  This improvement cycle enables control and with steady process performance improvement.  The MOS incorporates and employs a variety of subsystems inclusive of ‘any’ TOS.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p className="mos-graph-title">Four Stages of MOS Development</p>
-                <div className="flex-graph">
-                    <div className="size-contain">
-                        <div className="graph-div">
-                                <div className="mos-height"></div>
-                        </div>
-                        <p>Pace of Improvment</p>
-                    </div>
-                    <div className="fightingfires-ect">
-                        <ul className="greater-ul">
-                            <li className="title-li"><strong> 1. Fighting Fires</strong><br></br>
-                                <ul>
-                                    <li>Working hard but losing ground</li>
-                                    <li>Lack of a coherent structure in operations management</li> 
-                                    <li>Addressing symptoms instead of root causes</li>
-                                    <li>Explaining away poor perfomance as "out of our control"</li>
-                                </ul>
-                            </li>
-                            <li className="title-li"><strong >2. Treading Water</strong>
-                                <ul>
-                                    <li>Solving problems at the same rate they are occuring</li>
-                                    <li>Meaningful but informal structure in place</li> 
-                                    <li>holding ground but not improving</li>
-                                    <li>High risk of derailment by a big event</li>
-                                </ul>
-                            </li>
-                            <li className="title-li"><strong>3. Incrementally Improving</strong>
-                                <ul>
-                                    <li>Steady incremental gains</li>
-                                    <li>Rigorous formal structure in place</li> 
-                                    <li>CI literate workforce; broad engagement of hearts and minds</li>
-                                    <li>Stringing towards world class; the best of continuous improvment</li>
-                                    <li>Risk of complacency</li>
-                                </ul>
-                            </li>
-                            <li className="title-li"><strong>4. Step Change Breakthroughs</strong>
-                                <ul>
-                                    <li>Achieving regular breakthrough improvements</li>
-                                    <li>Routine challenging of the conventional limits; going beyond benchmarking</li> 
-                                    <li>Strong, visible individual ownership for overall business performance</li>
-                                    <li>Redefining world class</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
             <div id="capa" className="box1row new-color">
                 <p  className="left-text recolor"><strong >CAPA</strong>: Corrective Action Preventative Action
                 </p>
+                <p className="left-text">Reengineering  <strong className="strongANDred reveal">Help Desk</strong> and <strong className="strongANDred reveal">Tech-Ops</strong></p>
             </div>
             <div className="box1row2">
-                <p className="left-text">As a part of our Process Intelligence methodology,<br></br> CAPA is a proven quality management process<br></br> that focuses on making improvements to an organization’s<br></br> processes to eliminate causes of actions that deviate from <br></br>stated standards and expectations. 
+                <p className="left-text">As a part of our Process Intelligence methodology, CAPA is a proven quality management process that focuses on making improvements to an organization’s processes to eliminate causes of actions that deviate from stated standards and expectations. 
                 </p>
             </div>  
             <div>
@@ -394,8 +293,7 @@ const Consulting = () => {
                 </div>
                 <div className="box1 box1-addendum">
                     <p>
-                    The CAPA methodology evaluates how processes, technologies, and people interact and work together, to accumulate a risk analysis to identify undesirable situations in terminal operations and identify actions to prevent an occurrence or recurrence.  The CAPA process focuses the knowledge and ownership transfers from operations to IT and AM.
-
+                    The CAPA methodology evaluates how processes, technologies, and people interact and work together, to accumulate a risk analysis to identify undesirable situations in terminal operations and identify actions to prevent an occurrence or recurrence.The CAPA process focuses on the knowledge and ownership transfers from operations to IT and AM.<br></br>
                     <br></br><strong>CAPA is a point solution used when terminals need to mature rapidly and integrate internal sub-departments across the terminal.  </strong>
 
                     </p>
@@ -403,6 +301,19 @@ const Consulting = () => {
                 </div>
                 
             </div> 
+            
+            </div>
+            <p className="left-text font600 fBLUE">Installing a ‘Tech-Ops’ and CAPA discipline during the MOS audit and installation is foundational. </p>
+            <div className='stickies'>
+                {stickys.map((sticky) => {
+                return (
+                    <div>
+                        <p>{sticky.content}</p>
+                    </div>
+                    )
+                    })
+                };
+
             </div>
             <div className="back-to-top">
                 <a href="#top"className="button-slideb slide-rightb">Back to Top</a>

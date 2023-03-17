@@ -30,7 +30,7 @@ const Header = () => {
               <NavDropdown.Item href="./consulting">Professional Services</NavDropdown.Item>
               <NavDropdown.Divider /> 
                 <NavDropdown.Item href="./consulting#MOS">Management Operating System (MOS)</NavDropdown.Item>
-                <NavDropdown.Item href="./consulting">Effective Management and Decision Making</NavDropdown.Item>
+                <NavDropdown.Item href="./consulting#EffectiveManagement">Effective Management and Decision Making</NavDropdown.Item>
                 <NavDropdown.Item href="./consulting#capa">CAPA: Corrective Action Preventative Action</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown className="link-color" title="Software" id="collasible-nav-dropdown">

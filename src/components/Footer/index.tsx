@@ -19,18 +19,16 @@ const Footer = () => {
                         <p>Professional Services</p>
                       
                         
-                            <a href="./consulting#mos" className="footer-links"><strong className="strongANDred">+</strong> Management Operating System (MOS)</a><br></br>
-                            <a  href="./consulting#Effective-Management" className="footer-links"><strong className="strongANDred">+</strong> Effective Management and Decision Making</a><br></br>
-                            <a href="./consulting#ai" className="footer-links"><strong className="strongANDred">+</strong> Applied Intelligence (AI)</a><br></br>
-                            <a href="./consulting#pi" className="footer-links"><strong className="strongANDred">+</strong> Performance Intelligence (PI)</a><br></br>
+                            <a href="./consulting#MOS" className="footer-links"><strong className="strongANDred">+</strong> Management Operating System (MOS)</a><br></br>
+                            <a  href="./consulting#EffectiveManagement" className="footer-links"><strong className="strongANDred">+</strong> Effective Management and Decision Making</a><br></br>
                             <a href="./consulting#capa" className="footer-links"><strong className="strongANDred">+</strong> CAPA: Corrective Action Preventative Action</a>
                         
                     </div>
                     <div className="footer-divs">
                         <p >Data Management Tools</p>
-                        
-                            <a href="./Software#cherry-PIE" className="footer-links"><strong className="strongANDred">+</strong> Cherry COLA: Cherry Collective Data Assistant</a><br></br>
-                            <a href="./Software#cherry-PIE" className="footer-links"><strong className="strongANDred">+</strong> Cherry Performance Intelligence Engine (PIE)</a>
+                            <a href="./consulting#ai" className="footer-links"><strong className="strongANDred">+</strong> Applied Intelligence (AI)</a><br></br>
+                            <a href="./consulting#pi" className="footer-links"><strong className="strongANDred">+</strong> Performance Intelligence (PI)</a><br></br>
+                            <a href="./Software#cherryCOLA" className="footer-links"><strong className="strongANDred">+</strong> Cherry COLA: Cherry Collective Data Assistant</a><br></br>
                             
                         
                     </div>
